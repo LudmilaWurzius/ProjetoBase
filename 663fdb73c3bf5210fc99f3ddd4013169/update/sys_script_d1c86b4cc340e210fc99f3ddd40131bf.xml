@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1546361_bases_bases</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Duplicate Base</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Normaliza os valores removendo espaços extras e convertendo para minúsculas (somente se os campos estiverem preenchidos)
+    var formattedName = current.name ? current.name.trim().toLowerCase() : "";
+    var formattedCity = current.city ? current.city.trim().toLowerCase() : "";
+    var formattedState = current.state_province ? current.state_province.trim().toLowerCase() : "";
+
+    /** ---------------------- ETAPA 1: Verificar Nome ---------------------- **/
+    var baseByName = new GlideRecord('x_1546361_bases_bases');
+    baseByName.addQuery('name', 'LIKE', formattedName);
+    baseByName.query();
+    
+    while (baseByName.next()) {
+        if (baseByName.name.trim().toLowerCase() === formattedName) {
+            gs.addErrorMessage("Já existe uma base cadastrada com esse nome.");
+            current.setAbortAction(true);
+            return; // Interrompe a execução imediatamente
+        }
+    }
+
+    /** ----------------- ETAPA 2: Verificar Cidade + Estado ---------------- **/
+    if (formattedCity !== "" && formattedState !== "") {  // Só verifica se ambos os campos estão preenchidos
+        var baseByLocation = new GlideRecord('x_1546361_bases_bases');
+        baseByLocation.addQuery('city', formattedCity);
+        baseByLocation.addQuery('state_province', formattedState);
+        baseByLocation.query();
+        
+        while (baseByLocation.next()) {
+            var dbCity = baseByLocation.city ? baseByLocation.city.trim().toLowerCase() : "";
+            var dbState = baseByLocation.state_province ? baseByLocation.state_province.trim().toLowerCase() : "";
+
+            if (dbCity === formattedCity && dbState === formattedState) {
+                gs.addErrorMessage("Já existe uma base cadastrada na mesma cidade e estado.");
+                current.setAbortAction(true);
+                return;
+            }
+        }
+    }
+
+    // Atualiza os valores formatados para garantir que sejam salvos corretamente no banco de dados
+    current.name = formattedName;
+    current.city = formattedCity;
+    current.state_province = formattedState;
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 13:50:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1c86b4cc340e210fc99f3ddd40131bf</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Duplicate Base</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_script_d1c86b4cc340e210fc99f3ddd40131bf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 14:29:40</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d1c86b4cc340e210fc99f3ddd40131bf"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d1c86b4cc340e210fc99f3ddd40131bf</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-26 13:50:26</sys_created_on>
+        <sys_id>3f89674cc340e210fc99f3ddd401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-26 13:50:26</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

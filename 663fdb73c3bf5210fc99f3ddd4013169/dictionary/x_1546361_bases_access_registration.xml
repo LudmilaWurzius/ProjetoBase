@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="81fb04d4c304e210fc99f3ddd401315c" extends="task" label="Access Registration" max_length="40" name="x_1546361_bases_access_registration" type="collection">
+        <element display="true" label="Requester name" max_length="40" name="requester_name" type="string"/>
+        <element label="Function" max_length="32" name="function" reference="x_1546361_bases_function" type="reference"/>
+        <element label="Base" max_length="32" name="base" reference="x_1546361_bases_bases" type="reference"/>
+    </element>
+</database>
