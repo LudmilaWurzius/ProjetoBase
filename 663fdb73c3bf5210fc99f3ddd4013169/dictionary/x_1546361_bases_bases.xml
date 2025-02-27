@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="6a2d63b3c3ff5210fc99f3ddd40131e0" extends="task" label="Bases" max_length="40" name="x_1546361_bases_bases" type="collection">
         <element label="Latitude" max_length="38" name="latitude" type="decimal"/>
-        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element display="true" label="Base" max_length="40" name="name" type="string"/>
         <element label="City" max_length="40" name="city" type="string"/>
         <element label="Temperature" max_length="38" name="temperature" type="decimal"/>
         <element label="State / Province" max_length="40" name="state_province" type="string"/>
