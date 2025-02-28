@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=91594000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=141896000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -18,11 +18,11 @@
         <label_cache>[{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.state","label":"3 - Look Up Record➛Bases Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1546361_bases_bases","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Pending","used":false,"image":"","rawLabel":"Pending","selected":false,"missing":false,"reference":false,"value":"-5","parameters":{"name":"task","dependent_values":[""]}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task","dependent_values":[""]}},{"label":"Work in Progress","used":false,"image":"","rawLabel":"Work in Progress","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Complete","used":false,"image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Incomplete","used":false,"image":"","rawLabel":"Closed Incomplete","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Skipped","used":false,"image":"","rawLabel":"Closed Skipped","selected":false,"missing":false,"reference":false,"value":"7","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Access Registration Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1546361_bases_access_registration","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Awaiting Approval","used":false,"image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Reproved","used":false,"image":"","rawLabel":"Reproved","selected":false,"missing":false,"reference":false,"value":"7","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current.base.sys_id","label":"Trigger - Record Created➛Access Registration Record➛Base➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1546361_bases_bases","column_name":"sys_id","usedInstances":{"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0":["conditions"]}},{"name":"fa010c90-a593-47cf-848c-c8a98ad53ad2.record","label":"8 - Update Record➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"18765102-9bd7-40ce-9db4-970c71f4df9a":["record"],"5593de1d-1d52-4ec0-ab0a-01bb8d87c55e":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"785771fa-a5a6-49f9-afd3-3ba8b5413a91.Record.assigned_to","label":"3 - Look Up Record➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"Created or Updated_1.current.base","label":"Trigger - Record Created or Updated➛Access Registration Record➛Base","reference":"x_1546361_bases_bases","reference_display":"Bases","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_access_registration","column_name":"base","usedInstances":{"785771fa-a5a6-49f9-afd3-3ba8b5413a91":["conditions"]}},{"name":"{{static.6b02d8dcc304e210fc99f3ddd401313a}}","label":"Base Managers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"Created or Updated_1.current.assigned_to","label":"Trigger - Record Created or Updated➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"3dfbdac7-9904-498f-a591-0a41f815635e":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"],"dae6c5d1-9b59-47ef-aae6-9264114df7d8":["record"],"cc741ab3-c8c9-4244-922a-21607d569ab4":["record"],"fa010c90-a593-47cf-848c-c8a98ad53ad2":["record"],"5b8a9ea3-a044-41b5-b83d-1e72fc096d25":["record"]},"attributes":{}},{"name":"cc741ab3-c8c9-4244-922a-21607d569ab4.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e91d813e-3d49-4f6b-ac01-3ded24062737":["condition"],"3e12d03f-37cf-44d2-816c-d3f3eaf628d1":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b8a9ea3-a044-41b5-b83d-1e72fc096d25.record","label":"11 - Update Record➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"21402778-c6db-445e-8d6e-3f6bf4dab5b5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.current","label":"Trigger - Record Created➛Record","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"],"dae6c5d1-9b59-47ef-aae6-9264114df7d8":["record"],"cc741ab3-c8c9-4244-922a-21607d569ab4":["record"],"fa010c90-a593-47cf-848c-c8a98ad53ad2":["record"],"5b8a9ea3-a044-41b5-b83d-1e72fc096d25":["record"]},"attributes":{}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.assigned_to","label":"3 - Look Up Record➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.maximum_capacity","label":"3 - Look Up Record➛Bases Record➛Maximum Capacity","reference":"","reference_display":"Maximum Capacity","type":"integer","base_type":"integer","parent_table_name":"x_1546361_bases_bases","column_name":"maximum_capacity","usedInstances":{"3f38439b-dd85-4f19-9593-86aa67a47f5d":["condition"],"88d0dcb9-1452-4985-b79f-d287de7da3a7":["maximum_capacity"],"fda019b4-497a-4311-a002-180a20bb4751":["maximum_capacity"]}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record","label":"3 - Look Up Record➛Bases Record","reference":"x_1546361_bases_bases","reference_display":"Bases","type":"reference","base_type":"reference","usedInstances":{"88d0dcb9-1452-4985-b79f-d287de7da3a7":["record"],"fda019b4-497a-4311-a002-180a20bb4751":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>6dd14918c308e210fc99f3ddd40131cd</master_snapshot>
         <master_snapshot_digest/>
-        <name>Access Registration Lifecycle</name>
+        <name>BASES: Approval Access Registration</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>f3ad64e0c3882610fc99f3ddd40131bf</remote_trigger_id>
+        <remote_trigger_id>ce26332cc3486610fc99f3ddd40131cc</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99f89f08c300e210fc99f3ddd4013192</sys_id>
-        <sys_mod_count>29</sys_mod_count>
-        <sys_name>Access Registration Lifecycle</sys_name>
+        <sys_mod_count>43</sys_mod_count>
+        <sys_name>BASES: Approval Access Registration</sys_name>
         <sys_overrides/>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name>sys_hub_flow_99f89f08c300e210fc99f3ddd4013192</sys_update_name>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:31</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:52</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -52,7 +52,7 @@
     <sys_variable_value action="delete_multiple" query="document_key=99f89f08c300e210fc99f3ddd4013192"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="x_1546361_bases_access_registration">function!=cd349c80c380a210fc99f3ddd40131b6<item display_table="x_1546361_bases_function" display_value="Base Manager" endquery="false" field="function" goto="false" newquery="false" operator="!=" or="false" value="cd349c80c380a210fc99f3ddd40131b6"/>
+        <condition table="x_1546361_bases_access_registration">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -62,34 +62,34 @@
         <run_on_extended>false</run_on_extended>
         <run_when_setting>both</run_when_setting>
         <run_when_user_list/>
-        <run_when_user_setting>any</run_when_user_setting>
+        <run_when_user_setting>not_one_of</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>Ludmila</sys_created_by>
-        <sys_created_on>2025-02-27 13:26:33</sys_created_on>
+        <sys_created_on>2025-02-28 04:02:26</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f3ad64e0c3882610fc99f3ddd40131bf</sys_id>
+        <sys_id>ce26332cc3486610fc99f3ddd40131cc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 13:26:33</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:26</sys_updated_on>
         <table>x_1546361_bases_access_registration</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <data>{"run_flow_in":"background","run_when_user_list":[""],"run_when_setting":"both","run_when_user_setting":"not_one_of","run_on_extended":"false"}</data>
         <identifier>99f89f08c300e210fc99f3ddd4013192</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>Ludmila</sys_created_by>
-        <sys_created_on>2025-02-27 14:04:31</sys_created_on>
-        <sys_id>f356fcacc3882610fc99f3ddd4013100</sys_id>
+        <sys_created_on>2025-02-28 04:02:52</sys_created_on>
+        <sys_id>9c46f32cc3486610fc99f3ddd40131e6</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:31</sys_updated_on>
-        <trigger display_value="">f3ad64e0c3882610fc99f3ddd40131bf</trigger>
+        <sys_updated_on>2025-02-28 04:02:52</sys_updated_on>
+        <trigger display_value="">ce26332cc3486610fc99f3ddd40131cc</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=99f89f08c300e210fc99f3ddd4013192^sys_idNOT INf356fcacc3882610fc99f3ddd4013100"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=99f89f08c300e210fc99f3ddd4013192^sys_idNOT IN9c46f32cc3486610fc99f3ddd40131e6"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=99f89f08c300e210fc99f3ddd4013192"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=99f89f08c300e210fc99f3ddd4013192^sys_idNOT IN51f89f08c300e210fc99f3ddd4013196"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -145,7 +145,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</model>
+        <model display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</model>
         <model_id>99f89f08c300e210fc99f3ddd4013192</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_99f89f08c300e210fc99f3ddd4013192</name>
@@ -229,7 +229,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</model>
+        <model display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</model>
         <model_id>99f89f08c300e210fc99f3ddd4013192</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_99f89f08c300e210fc99f3ddd4013192</name>
@@ -279,18 +279,18 @@
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment>O fluxo é disparado quando um registro é criado na tabela Access Registration e quando a função não for Base Manager</comment>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <name>Created</name>
         <remote_sys_id/>
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 02:02:15</sys_created_on>
         <sys_id>77011a18c38ce210fc99f3ddd40131b5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 13:26:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:23</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FVVPLZAClOSb8pYmWTTAdgM42fZhGwgUL7ZQmvKKlLLeRf69Q11sWZId37JJXgKYpDiHh2fODPPlhy1wyIR9bt/jUDD7zI6kZonE4n4xZzCszXAg8czMzbCkWMfJwj7XScrO7DihLLHPnTM7wyJldwt1Q+EjWJp/UX5ul9Pw+1vg9HsDb+AEIVZMBZgQplSQsEmkdIJ1FEtYTSM1F3jxd/nRRb7IGq8vItNI0IRJ+/zLw5k9xwlE1AbNj8ZUZCARTrDvMkQ8x3NdhNxRzwkHXui41MMMIdiwyUTjCLqDkNX52TfNJGUQimOhWAdXCcP0VorFcsUUqC7ImuFvKvoOu4+QWccZYCesmFv+DEpWimEyjSPCbuc5GflIgbOYjEU6k58K/IZPxnEqdMUnjKQK9mNzA9mAKBHxu2n8OK4CfohkfrpyUsQEi+UvrHUShalmyhDOIwHUBwU3Kk6THP34+vJ2fBX8c3F/+ef1OBhf392Pby7vr6/sp/xcwdfU7FggLLEExXGeliL4EDFhLjBhX1OmTJSSe0WSaK4viI4yVsJ6Olvp+TKWNCql0tA0qabUuqbLo1WXitBGWZPa5pW0eSqJGfrl3xQhjxLq9XwyAsGNEHYdxInvc49S2kOOB9LbW8GDAcaU4Q0KDnlNwfWzdyDWHTTUD71Ny+XILmLuIfRKci4S7mA1z2LKxNVqOxsmJxNQXiTnqTZsPWKpVaDjAFMa1Hg0SwHTc/IuztbW+POqTlIJWwTLG2prOydyyehHcEzQEGRoxVa+Jczzj+WW41RaMVwl/LFImgBZ2qo8j9/M8KTkmN8xwYiuyYJ/VvVff0VKRXJSQ70MmrPSirkMB/KyqiMVsdWRwR8OTOw2v1mDt0Zt2juNHYfzkHEXDU0SO8gLuYOGqI859RAibi2N22A2otSN23+RdN4vmVWuO7GDypoUl+BRXfg7KSZbl1tFglFD6RmXp4HmnAiaa6A1vM/by/yWsiyGr9bVue1oJ24BMM0wfEF39UCzYAez4yJ+BN89wOhCTP6bJHEqadN5zJ5WJK3VCuvXkr/fTmh6PIa2diuA9RWvZHcrhiuNYrk4gdF53Al91mMI/M0Dawv7vh8S7HI+HAyZ6zSMbgWjE9u7MLhnhJV1KXOT2XVqJOuS1h42dwTAluXtDfB4syuF2Wl1xdz7MLXHKZMBQE0CYWyr5W0TEVFWzR2c2K0o2SqVj01uPvJJ3xkOyRAeIpDcvMdC7PTcPvaHA2/UbyR3C8o2mLqDhJ/yPFELlQPZkPifi6m39fJ+SYUqprUpMvvXXgndaf4NLoLU6p+5Fiv3jzixPsXy95vVOuuOQVnL36inKsK7oDAXa70sjDDW01YXAKH/gPG10KZ73MDKa76JGnrI1o919JuI9UZ9n3vdbsL9LjdZgdkM8803DTsmQ7Yxrbq6h121nXWmyMZyf4BaGzKp9wFbGpVTkeKcnBT35Ujxjm6Oqlzc+BA8BOw7qlZ5C3FMyTIxWRDzuk9fxRZMWBDEirhV/h8Q3vXhwtJTBpQK6IIhoGWiH2vQ9YLRhrJU8M8FUvTVrcIFw1bZK71qTWrc+mmfsIwOcb/vbehy/eYTtgvQM3jffIXaOwGyrnzaWqb227e5Z2ehqqlzXRE7lqCTnrq7Dh136s5K9Nypj68x2x7gHSjeaPV4+B82VAYx9x4AAA==</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuvgS5y1NvGiA7Qa1ve3DIhUoaWgLpSmvSCnxLvLvHepiy7o4lu1ssi8BTFKcM4dnzpD58l1nxAWmX+kz4jLQL/SAS4g4YbP1CnBYqmGHk6WaWxLuExlGa/1KRjFc6GHkQ6RfmRd6QlgM07W48/EjXJp+kX+u59P4+8kx+72BPTAdlwgQDvE8EMKJYB4IGREZhBxX+4FYMbL+O//oOl2kTXYXeYuA+RFw/erLw4W+IhFGlArN98pUoCB51CMjCwzPNm3LMgzrsme6A9s1Ld8mYBi4YZWJSgqygZBt/vAkgfuAoShhAhq4ioD495ytNysWSHVG1pI8ieAb7n5pqHUUELsH2dzmp5Ozkg17izDw4H6VkpGOZDizyZDFS/4pw6/4BEpiJgs+cSQWuB+sFGQFIkdEp4vwcVIE/BDwNLt8koUeYZtfRMoocGMJQhFOA4bUOxk3IoyjFP1kfHM/uXX+uZ7d/DGeOJPxdDa5u5mNb/XnNC/na6x2zBDmWJwsneeNCD4EwNQBRvA1BqGi5NwLLwpW8tqTQQI5rOeLrZ5vQu4HuVQqmvaKKbGr6Ty14lANo1XWXmnzQtr/jv+qSzcb7CbVwYAQH0iLVF1akmo5yQZosiHfcnb7RJuPHKLanmG8kW6zyjpatsvQB3a73U7HyfkcJRbwVSwVW4+ES+HI0CG+75R4VEsR00s6znKri/ll+UYxxy2czQnVRZwSuWH0I1ojaghLsWAr3RLn6cd8y0nMtRCPEv9oXhwhWVIrzI3eLck855hOgYEnS7Kgn0X515+BEAGfl1Bvgqas1GJuwqG8tCKlLLY4MfjDkRVc5zep8Fap5M5lbJqUukAtY6iK2DRsl5rG0OgT6tuG4VmlMq6DaUUpK6f/KuXcrZhFqjt2gMqqFOfgjbLwD1JMsiu3ggSlhtwzbs4DzTwTNEtBq3if3cn8NrLMhm931bkvtTP3euInBL/wD/VAteAAs6MsfETfPcLoXOL9N4/CmPtV51F7agHXtiu0X3L+fj2j6dEQ7697AeyueCO72zJcaJTw9RmMzqamO4IeGOhvNlqb2x+NXI9YlA4HQ7DMitFtYTRi+ykM7gVhJU3KbDO7Ro0kTdLqYHMnAKxZXmeAp5tdLsxGq8vmfg5Te1wAdxBq5DBlWzVvm7PAh2Lu6MKuRUm2pXxqcdPLkdc3h0NviA8RLG7aA5eYPatPRsOBfdmvFHcNyj6YsoGEH/I8EWuRAmkp/M/Z1Pt6Yh+j0KNeHekxCZBStZ3u3ZjjfTX9hmRBSh1RHZSWOkoYaZ9C/tvddp02BWx06av1XG35EBTqqLXXheGGclG7F2Do33F8J7S6T7aw8pavpIoekt20Tn4lQe+yP6J2s7/QUZO/bMG0w3z314gDiyFpLaum+8Sh2k4aS6T1AnCEWisyKd8M9lxdzkWKeXZSrNcjxT75ulTUYuvT8Biw76B/dbphndKyVExwQlr26dtQwwkNg2gB1fL/DOJL311rcgFIKcN7MQbUVPRTDbrcMOpQNgr+sUCym3atceGwlt+e3rQnVU49aTrNbs0I/CHp9+2Wy+6o+pJtQvECyHffljqrvpH2vb2p277VPRu7U0mSu//bOLDvnDXr5uZzWtaN7eelrE9vLPve4Q0o3kHLOOzJ8/A/vBIR3vkeAAA=</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -302,7 +302,7 @@
         <comment>Envia notificação se reprovado</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>12</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -310,10 +310,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:10:17</sys_created_on>
         <sys_id>08800d94c308e210fc99f3ddd40131ee</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>21402778-c6db-445e-8d6e-3f6bf4dab5b5</ui_id>
         <values>H4sIAAAAAAAA/8WW3U7jMBCFXwXluqniOG0S7pAQEtIuSCzLDVpZjj0ulpwfEqfAIt59x0lampYCYln20lPPeM4Zf3WuHz0tvUMvkomUqSKBIoQEJJiRkCSQQCbieQxh4k28gueAO2sQZS1xveSmdYHHx1mW8BQ49XkQRX5EspmfJVT6BOJQiSCdy3A27fOenjBT6qYy/OFqKIARcaONrKHwDq9/TbyK13iWhdo7fNz6yT5UwAzPwGDicSnaHAp7cHqMNd6rY5V9sRKyLcydgWs5VGfaBfEn1w+ZeHBvoZCApyluGph4OS8kt2X9sI7UwOV5YZ4DN7qwvdKc3zf6N9anodunAKWJwYX1kg0OrcwptYDzyuqy6COWZ2blXGnavDjrJThvQfHW2A1v2wbrQeV6dk3YusWG1I+b8u5idd6JLjp1Q7emFNysV9zaWmethcaNo9WXL9nTh7+9OBgw0G3MeVXpYsGqulzq7jzsPp8uDC6mypR32GajF8WUCyd1iqby6QnGj7vwFa+10/0dy2CyO/NnoW9bOHWDlySIaRoIPw5n1I8CwfEOysznWahmUTRP5hnxnjqP2W3r5PVuDb6wztrOV9bdB9zaiFpX9gibWcLgxtNk4CUhr90zGj5fq42az8zcMzKL5nROWMYbaBgXApqG1bDQja15N+kdTo66TQcX400fQ+fSdXVw1nf1XkWj5D0KB3hGsYGd8NPYSYL/w87Q0d/DM7JnzM5oMl+CjsiyTGWQ+iQTwo9iSPwk5LEPs0BQFdIgiNWb6LwFTPT69dp4YIrSaqXF6n6vkIFYJbGQiaAighDriDRVVEoZBYSSUO3ysgkKUuO8A/lhYtbzXj81byta5Z6NJb0sdCCn3jhnAIe+Dk7/j/6RN6d5aGDpRgg514b1l2cPTFsa9oO1r+iINq4UCAuSKQ1G4hViXc4XPGAj15FErLbD4Oas/x2Cl7sDb8CywQDmCjBV1jl3Y+y0bJMbpfiJRcPET+chkgsUP7wkpT5BkgE4qFB+xqP36w+ZGK4oJgoAAA==</values>
     </sys_hub_action_instance_v2>
@@ -324,7 +324,7 @@
         <comment>Envia notificação de criação de registro</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
@@ -332,10 +332,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 16:45:25</sys_created_on>
         <sys_id>179110dcc304e210fc99f3ddd40131ef</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>dae6c5d1-9b59-47ef-aae6-9264114df7d8</ui_id>
         <values>H4sIAAAAAAAA/8VWXU/jMBD8K1WemypO0jblDR1CQroDieN4Qchy7HWx5HzgOIVe1f9+6yQtTaGAOI579Hq9npndiXOz8pTwjrxYJELMJAkkISQgwZiEJIEEUj6dTCFMvKGXswww0wAvjMD1gunaBVarbwaYBUHJiNfGQG7Xa9wXqio1W153aRjhd0oL3PeObm6HXskMVrRgvKPV3pZdlkA1S0HjwZOC1xkWHZydYI33ot2cvtzA3Yfv7sC16KpT5YK45fCQoQePFnIBeJtkuoKhl7FcMFuY5TaCrMVFrp8Cdyq3LdOMPVbqN9aPQpcnAanxToXtknYKbcQpFIeL0qoibyOWpXqjXKHrLD9vKThtQbJa2x1t6wrrQekwOxDW1AhI/rwrHi43952qvGHXodUFZ3q7YtYaldYWKteOWl29JE8b/v5iY0BDk5ixslT5nJamWKjmPkSfjeYaFyOpiweEWal5PmLcUR2hqGx0ivGTJnzNjHK8f2AZPOzu/JWr+xrOXOMFCabRLOD+NBxHfhxw5qeJSH2WhnIcx5NkkhJv3WhM72tHr1Wr04U20ja60mYeMLXiRpX2GMEsoFNjPexckZDX5iwKn8Zqp+aTMx4pGceTaEJoyiqoKOMcqooamKvKGtZ0+plPjpukwWU/6WPWuXKoBuctqvcy6h0+wLAzTy/WeSf8NO8kwf/xTofo783Tk6fvnV5nvsQ6PE1TmcLMJynnfjyFxE9CNvVhHPBIhlEQTOWb1nnLMPHr47XzjOSFVVLxzXxvLMNkLHlAOI+CGEKsw2czGQkh4oBERAbP/dJ+4AfdG/Rhq2wbvX1j3qayOXve5/Iyw84yZueezjHR645pP+UfeWyqZQUL1zvImNK0nZoDLtrjcNhRh4r2bMakBO5+CaQCLXB2aHPmC16unupoQaz2zHy7vf533rt63vAKLO0EoK4AlYXJmGtjw2XfsvGMwDQKE382CdGyEI39VESRT9DCAAxkKD7jtbv9A+Bje1oFCgAA</values>
     </sys_hub_action_instance_v2>
@@ -346,7 +346,7 @@
         <comment>Atualiza campo de capacidade maxima para -1</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id>3f38439b-dd85-4f19-9593-86aa67a47f5d</parent_ui_id>
@@ -354,10 +354,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 13:49:31</sys_created_on>
         <sys_id>1cf2fc68c3882610fc99f3ddd401314b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>88d0dcb9-1452-4985-b79f-d287de7da3a7</ui_id>
         <values>H4sIAAAAAAAA/+1UXWvbMBT9K8XPcbDij3y8bYTCHtZCN/rSFXMlXbcCWfZkOW0W/N8n2XKadl0XSmAMloeAjnXvPefeo3uzCwQPVkGCPCJLkrGYxPEsimaLhNAspmTGY0AkwSRQUKK9qZFVmtvzBmTrgN1utpgXlNA4nKfJIkzIPA6XS8hCymJOaUZZAdH0qo/rOhvJRVNL2F77BBZh90JyjSpY3dxOghq0rWVQB6vdi09mW2MugaK0geuKtSUqc/ZpbXMcq2OMvhqFvBTmatgz99lz4UD7yfEh0STAR4OKoy1XgGxwEpSgOJhKb4OV0a0FNAK/VHK7v3EvlBmUlvDYiB82fxK5ewVaacx3YX/MfYfG5lSC4WVtRKUGxACVY+cq2ZbqYpDgeosFtNIc9LZtbD6sHWVHYmBYfLmvHq7GeudC9eo8W1kxkPsTGKMFbQ02bhwosW9KCXUt1F1e62oj+mBLpZzeSXuYFrJ6sDUbcaemwBzvqW0QTM8tvu7ha9DCifhs09jgrheff29d3UGGJ5z3mnvBeT8oe7VhWtTmg028QU+zm3gj0/QtA7Dl07wPcj6Z+TEnaZLFGckpNNgM/79a9qOH3+fbr67y2cVQ+VjWz4J/o8I79xnmjZuezLiLv2Rcz+gfc+6f/BrN3lxYB5PuLdoceNVORJRtmTOogQmz/dZGUcx3u4LnRoNqikqXK7okCUOehpwChAmmSbiIsrld1WmSxBwgncFrS/m0yd/5TrC0lAyeDaQmR3dsTHAuUPLmlRaOD8UXyDe+wH7Ln+y1kCzqf/+X/emW/Qg6ii996rDXQ2CDfN+prutufwKFwp8C/AgAAA==</values>
     </sys_hub_action_instance_v2>
@@ -368,7 +368,7 @@
         <comment>Atualiza status para reprovado</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>11</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -376,10 +376,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 19:28:44</sys_created_on>
         <sys_id>27f67c98c3c4e210fc99f3ddd40131c6</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>5b8a9ea3-a044-41b5-b83d-1e72fc096d25</ui_id>
         <values>H4sIAAAAAAAA/+1VQW7bMBD8iqqzYUiW7Sa+BQ0M9NAYcItc0pRYkWuHACWqJOXYNfyaPqUf61KiHDtp0yAwUBSobrtczs4sh+LNNpYinsRDFEl6no55lmbZIEkGZ8M0H2d5OhAZIKZxLy6hQKo0yLURFK9A1T6x3b4zCA4FS/u8NgZLt9vRupC2UrC5DmWU4XdSCVqPJze3vbgCQ4gOTTzZPlpymwqZghwVbbzUvC4INHp/SRgvZdvtnnd0H9P3PSgWAZ1Jn6QlzydNejGuHZYCqd0ClMVeXEApwGmziSfO1JQg1WJWqs2+4k6WrlVawNrKb4Q/THzdAkkaD1PYhyxMqBuOlhxnlZO6bDMOctVNTqu6KK9aCX62uIBauYPZ1pbwsPKUPYmW4eLjnb6fd/2msmzUBbZKc1D7CJwzMq8dWn8cqLAZSgFVJcslq4xeyWYzUSn6S0VBf6H0PfW0cln2gXvefRoQ9KeUv2zS12CkF/GBYGjzrhHPvta+bysjEGaN5kYwaw6KSi03snIXBLzCQHPXC3bNR88ZgJ8/nPcB5oNl1ywdDcfZOGU5WLQMOEdrmcGltM5AcwRPDHzRFEXz46LXefqTZxVdtaxequho828UBlcf5YKpRycz9dlfMnVg9I+5+k9eTgbP/swOTrqxrz3wsXX03/1cJ0km3n4hCV6dbeNZFNyso/LHdx0ttIzACwahowqVjpZ+fg4jAZG/BW+eOv7U8K+8K1gQKUJqafVePLUOYCpRCfuLMXaXJTRgq9Bg/wqc7Mak46T5/j8GJ3wMbn8CWX7cBb0IAAA=</values>
     </sys_hub_action_instance_v2>
@@ -390,7 +390,7 @@
         <comment>Atualiza campo de capacidade maxima para +1</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>13</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -398,10 +398,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 13:49:31</sys_created_on>
         <sys_id>94f2fc68c3882610fc99f3ddd4013178</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>fda019b4-497a-4311-a002-180a20bb4751</ui_id>
         <values>H4sIAAAAAAAA/+1UUWvbMBD+K8XPcZBix3HytlEKe1gL3ehLV8xJOrcCWfZkOW0W8t8n2XKadl1XSmAMloeAzrr7vu/u011vIymiVZSiIHRJM57QJJkRMstTyrKE0ZlIAJFGk0hDhe6mQV4b4c5rUJ0PbLezfFEyypJ4MU/zOKWLJF4uIYsZTwRjGeMlkOlln7fbuUwh20bB5ioUcBF+J5UwqKPV9c0kasA4LIsmWm2ffbKbBgsFDJVLPK15V6G2J59OXY236hizL0chz4V5DHcWoXohfdB98nwomUT4YFELdHAlqBYnUQVagK3NJlpZ07mAQRAXWm32N+6ktoPSCh5a+cPVT4m/V6KTxkMX9scidGhsTi05XjRW1nqIWGBq7FytukqfDxJ8b7GETtmD3natq4eNp+xJDAzLL3f1/eWIdyZ1ry6wVTUHtT+BtUayzmLrx4EK+6ZU0DRS3xaNqdeyT3ZUqumtcodpqep7h9nKWz0F7nlPXYNgeubip334Coz0Ij67Mi5514svvnced5ARCBe95l5w0Q/KXW25kY394AqvMdDcTYKR2fw1A/Dl47wPaj6a+aGg8zRLMlowaLEd/n+17McQfp9vv3rkk/MB+a2snyT/RkVw7pNYMO78aMbN/5JxA6N/zLl/8iuZvbqwDibdW7Q98KqbiKy6quDQAJd2860jJBHbbSkKa0C3ZW2qVSaSVJAli8k8J3E643kMsMhjTiBb5GlCKJYvLeXjFn/nO8HKUbJ4MpCavLljY4EziUq0L7RwfCgBoFgHgP2WP9proRnpf/+X/RGX/c1PXGeecrcIAAA=</values>
     </sys_hub_action_instance_v2>
@@ -412,7 +412,7 @@
         <comment>Envia notificação quando aprovado</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>9</order>
         <parent_ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</parent_ui_id>
@@ -420,10 +420,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:08:43</sys_created_on>
         <sys_id>95200594c308e210fc99f3ddd40131c2</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>5593de1d-1d52-4ec0-ab0a-01bb8d87c55e</ui_id>
         <values>H4sIAAAAAAAA/8WV226cMBCGXyXiellhzC6Qu0hRpUptIqVpbqLKGuxxYskcCiaHRnn3joHdLDlW6enSg2c8/z/+8PldYFSwHyQqUyrXLNKMsYhFKxazDDMsZLpOMc6CRVBBibSzRVm3itZXYHsfuLvTQBkyj0JY5TxMUqnDLMlkKDPIM1ArDipejnn395SpTNdYuD2bClBEXhqrWqyC/fNvi6CBls5y2Ab7d48+udsGhYUCLSUe1rIvsXJ7Hw+pxq/q2GSfbIQ8FubPoLWaqgvjg/TJ98MWAd44rBTSaRpsh4ughEqBq9vbbaRFUMeVfQhcmsqNSku46cwPqs9jv08jSZOTC9ulmBzamFMbiceNM3U1RhwUduNcbfuyOholeG9RQ2/djrd9R/Ww8T37JlzbU0P6y2V9fbI574OpBnVTt7aWYLcrcK41Re+w8+Pozelz9ozhT88OBi0OG0toGlNdiKatr8xwHnVfLi8sLZba1tfUZmcuqiVIL3VJpsLyA8UPh/AZtMbr/kxlKNmf+bUy33v86AevWJTyPJJhGq/oDkYSwiJTRQhFrFdJss7WBQvuB4/F997LG92afBGDtYOvYrgPtLWTrWncATVzhZMb94uJl4y9ds94/HCtdmo+MHMj2CpZ8zUTBXTYCZASu060eGE618Iw6SecHAyb9k7mm96Hzqnvau9o7OpXFc2SX1A4wTOLTezEf4ydLPo/7Ewd/T48M3vm7Mwm80/QkUVR6ALzkBVS0u8bszCLIQ1xFUmuYx5FqX4TnbeASV6/XjsPTFU7o43c3O8NMrlMUk6/d8llgjHVkXmuuVIqiRhnSfSUl11Q9g4a7x2qdxOznff2qXlb0Sb3aC7peaETOe3OORM4/HVwxj/6e96c7rbDKz9CLMFYMV6eF2B6pOFlsF4qOqMNtEbpUAlt0Cq6QmLI+QcP2Mx1IpGqPWFwd9Z/D8HTpwPv0InJAOELCF23JfgxDloek5vkDFMeZ2G+jolc5KuwUJyHjEhGBNSx+hOP3reffVe/vSYKAAA=</values>
     </sys_hub_action_instance_v2>
@@ -434,7 +434,7 @@
         <comment>Atualiza status para aguardando aprovação</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -442,10 +442,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 16:35:12</sys_created_on>
         <sys_id>994fc01cc304e210fc99f3ddd401311c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>1b610954-4444-4887-aae0-cb3bd2ad1c3d</ui_id>
         <values>H4sIAAAAAAAA/+1VQW7bMBD8iqqzYUiWbSS+BQ0C9NAYSItc0pRYkWubACWqJOXENfyaHvqQfKxLiXLspE2NwEVRoNbFu1zuzgyH0s06liKexEMUSXqajnmWZtkgSQYnwzQfZ3k6EBkgpnEvLqFAqjTItREUL0HVPrFevzUIDgVL+7w2Bku32dC6kLZSsLoOZZThC6kErceTm9teXIGhjg5NPFk/WXKrCpmCHBVtPNe8Lqhp9O6cehyKttt91cF9Ct/PoFiE7kz6JC15PGnSi/HeYSmQxs1AWezFBZQCnDareOJMTQliLaalWm0rFrJ0LdMC7q38Sv2Hia+bIVHjQYVtyIJCnThacpxWTuqyzTjIVaecVnVRXrYUvLY4g1q5HW1rS/2w8pA9iBbh7MNC31118y5k2bALaJXmoLYROGdkXju0/jhQYSNKAVUlyzmrjF7KZjNBKfpzRUF/pvQdzbRyXvaBe9x9Egj6F5Q/b9LXYKQn8Z7a0OZNQ559qf3clkYAzBrODWHWHBSVWm5k5c6o8RIDzE0v2DUfvWQAfvp43js9Hy17z9LRcJyNU5aDRcuAc7SWGZxL6ww0R/DMwGdNUXS1X/Q6T3/0qKLLFtWhjPY2/4JhcPVeLph6dDRTn/wlUwdE/5irf+flZPDiy2znpBv72h0fW0fv3U91kmRi8JkoeHa2jaeRxTqqUEiho5mWEZZLCfTfWzSix5OHh+8P33RE2bkX02EkIPJX4s1z+//RWa+8RVgQQurUYuwdrGfX4EKiEvYnAnfXKAxgyzBg+3042l1Kx0nz+/+ZOOJn4vYHlnEz29cIAAA=</values>
     </sys_hub_action_instance_v2>
@@ -456,7 +456,7 @@
         <comment>Encontra o registro da Base Solicitada</comment>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>3</order>
         <parent_ui_id/>
@@ -464,10 +464,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 02:05:03</sys_created_on>
         <sys_id>cdb15a58c38ce210fc99f3ddd40131b1</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>287fb1b3-7548-4173-99a6-bc3dbb6bcfa0</ui_id>
         <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjitZtmXnrZvAQIHdBmjTvqQBQYlUTCxNqiSVxDH87x2Kkuz4bsdF0xcDGs7lzMyZEeW7mc+If+mTYTDMhsPeIA6CKAqCfj9KcZgkUT9NggR3/ZYv8ISCpsEJp/D4iHlhn59R2Ov2o36IEqypdr9wTpjOOZ5+r9T+qcTpmHGiqPAv7+5bfo4VeDVU+ZezlSMzzSniOKEcrG9tUO+zRdA6GPAr4/UEbID6EQnnWipisQQtnz4bKgiFUBnmmrb8CRYEG6mmjURRTG4EXwjGTBjw6FvlZ81ewP0gsHoZhbRS6s6aR1SVyInTsWQpvckNk8JJHFB3KHkxEZ9dAra4NMMFN3VxQVJo8Edzi9mCqBBlX8fy6UsdcMREmV51yGWKefOEjVEsKQx0CXpBOZ2AIzTBec7EA8qVfGSlMWCZtB84PLQzLp8gqGYPoo1TC7wNJcLtEcivS/F3rJjN4j9wA8YAiHHoNnJF17JQZVUeUcoLXR4oLLTz5c/LWqGfhUXpsq7yQ65EoKBTxXLzEQweaZXKvFVzureTIsMFJVIpCLMx9RKx9VQjRn4UYExmsyvotqEEhe20UFBN07ZEbzul+Xyd8MeanzYYV8vID816o/GmUlQj8kpWjUh4thHpBsEfGhKjivc3I/tY7xLeQ/2Q7CQBWfRbS2WQq9wS99fpfDJDR4xy8mp1HwCuNr6xZPOS6Ta8FUEzG2Nlh3f++h3+LukJgAhy9WaCM1G+QgHoeXjb20mNJFzhQdn+pY1tZVin6+zFnpHey+lbtuxrzd8DQNaGXwGRd+tQbgBe79fafUXd6GzUjTrHUReIczdr0DdV21Dg+qZkW1frv1h9vKoP7FoyCOf3DfWvTosZHhuzY2OuzGZ01HAuM8udXG8h2JnvYVuGrfU7p3sMplU85IYVPTHyQM0ieq1FpHnC/P9N5xW7mhkq03vznS7cee1Plu50LEMT6BPL4aKpaApU0AgrijJZCIKqK+aCNrZvGVPaVMrrO+QLNYUSnoSR88yYeqW212ifY7MckF1t+Cnz6vQqDNqD9LwyPa9J77hibNlH3TPe9d6yj0aY8bL08KmQL/WOKiXVlp20p2s72n/gwjoQVHhWUG/faJv4vnGz7cH6V3x3vnXrpBQn3Q7ux1EYBkEYkDgYxHE46CdZH8fdbDFoCGmRwloEzxkQA9yjmgh1V4P11eJ248l/jsDO/TCqXByKtza+lsJ+o3Zi41nA0GevBrw/pWpfJFJyisWCnr0/tjDey/8nBbtdrY0T/bupab/rZV6wb4L9LOgnS4oBDTqDkKQXgziML7oZ6V8MCe5d4GHSiyNC0252+vv5/hfS2IpHSRQAAA==</values>
     </sys_hub_action_instance_v2>
@@ -478,7 +478,7 @@
         <comment>Atualiza status para aprovado</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>8</order>
         <parent_ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</parent_ui_id>
@@ -486,10 +486,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 19:28:44</sys_created_on>
         <sys_id>ebf67c98c3c4e210fc99f3ddd40131c4</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>fa010c90-a593-47cf-848c-c8a98ad53ad2</ui_id>
         <values>H4sIAAAAAAAA/+1VUW/aMBD+K1meEUoIoJa3qghpDysSm/rSddbFPqglJ85sh5Yh/vvOiUOh3TpUIU2Tlrc7n7/7vvNn524bSxFP4iGKJL1MxzxLs2yQJIOLYZqPszwdiAwQ07gXl1AgVRrk2giK16Bqn9hurw2CQ8HSPq+NwdLtdrQupK0UbG5DGWX4g1SC1uPJ3X0vrsAQokMTT7YvltymQqYgR0Ubp5rXBYFGH6eEcSrbbveio/uSvu9BsQjoTPokLXk+adKL8clhKZDaLUFZ7MUFlAKcNpt44kxNCVIt5qXa7CseZOlapQU8WfmD8IeJr1siSeNhCvuQhQl1w9GS47xyUpdtxkGuuslpVRflTSvBzxaXUCt3MNvaEh5WnrIn0TJcfn7Qj4uu30yWjbrAVmkOah+Bc0bmtUPrjwMVNkMpoKpkuWKV0WvZbCYqRX+lKOgvlX6knlauyj5wz7tPA4L+jPLTJn0LRnoRnwiGNu8a8ex77fu2MgJh1mhuBLPmoKjUciMrd0XAaww0d71g13z0lgH45fN5H2A+W/aJpaPhOBunLAeLlgHnaC0zuJLWGWiO4JWBr5qiaHFc9D5Pf/GsopuW1amKjjb/RmFw9VEumHp0NlNf/CVTB0b/mKv/5OVk8OZjdnDSjX3tgY+to3f3a50kmci+kQSvzrbxPApu1tFSywi8VhA6qlDpaOVH5zASEPkL8OG12c+I/M4bggXxIaSWUe/kWXUAM4lK2F8Mr7sioQFbhwb7t/9s9yQdJ833/xdwxl/A/U9/IcMDswgAAA==</values>
     </sys_hub_action_instance_v2>
@@ -500,7 +500,7 @@
         <comment>Solicita aprovação do gerente de base</comment>
         <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <generation_source/>
         <order>6</order>
         <parent_ui_id/>
@@ -508,10 +508,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 16:46:37</sys_created_on>
         <sys_id>f0e194dcc304e210fc99f3ddd40131c4</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 03:40:07</sys_updated_on>
         <ui_id>cc741ab3-c8c9-4244-922a-21607d569ab4</ui_id>
         <values>H4sIAAAAAAAA/+1XbU/bMBD+K1U+ly5t+v4NDSFt0oZUGF8oihznQo1cJ7MdoKv633eOnTQUCBWqxIb46PO9PHf32D5frT0We1NvNE56MJn0/Kjr+4HvjwfUHwcQBaPhKCDU99qeIEtATQk0lTGu7wjPjWC9/iqBaIjDbofmUoLQmw3ux0xlnKwunRpK6ILxGPe96dV128uIRI8apDdd72zpVQYhJxFwNDxJab5Ep61vJ+hjX7Sl9ayEuwvfxMB17LyHzAhxy+Dx2x48aBAxYLSEcAVtb0lETHQqV95UyxwFmHR8Jviq0lgwoW2iS/Kg2B90H/SMXgKYGXVFqJahK1BZm5RROMs0S4WVaBLxsnApz5fip83AlBYSknNdK22u0B9kBrIBYREm54v0flbGO2WiSM6h5SklvFoRrSWLcg3KdAM4FDVZkixj4ibMZHrHCmOEsuzccFx0Ep7eY0zFbkSHUIO7gwUinVOUnxTiSyKZSeIHukHjTZF8+Ds3cW0aDnBY5GwTRi1FJcv0Mfq8A4dw03ZEjWhj6+m209bdlqcPYXfQHwbDbhgRBSpEZVAqlHDDlJakKPwT1h4XSq3ZY6W3EfnCAGoVXWzvncwj46fJORYXy1BY147E3WYSO8k+LB7778Nih+g/o/FrDPa7TU2Px9smYzxETHiYMOD1K7fceMrX2s7bSHpqQj0i6R54S+NjF7116gC/lIijbbHcoW3vgLT134m4H/f6pY1kgGDb89s0l6KBu+ECb1TT0hc5XNM4FJf3gF8af7f4d6m8m1YDk4NPJv/DTO4PGqkAz9xeNBUxM/hUjc/2zgM1g1ugWh2L1a+r9bo3HiVRNwqORoP++KjfHQVHkwkZHkU0iKNoiA8/8Tt2Nu0QZXLE+Vmnm831MzPI4SO87TxV1/ss56DKM7VHIath3Nk1FtadqGpTOiN3qvqHms3f71B9zLmGNvIgmWz7HudYDvwx1j+Rc8+CnHvTuSdSAXOvPfeMVmgIUYhRA8FVG4Vsvd5srCS34/ncTL7b5dY6JitVaCq6gBhJVUgfSSzTnfyQf9hzF6B1gri/XLDai/R61aqPcG7tny2kOzVVJrZyrP4eDQ72HvU/D07t4CBMFlaDNz4/eAW9+TRd/wW5rgSqkhEAAA==</values>
     </sys_hub_action_instance_v2>
@@ -524,7 +524,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -535,10 +535,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 19:28:44</sys_created_on>
         <sys_id>2bf67c98c3c4e210fc99f3ddd40131c3</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:49</sys_updated_on>
         <ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</ui_id>
         <values>H4sIAAAAAAAA/+1UTW/bMAz9K4PPjuHPtMllCDYUGLCtwFr0shUGLdGJMFnyJDltFuS/j/JHGqwpNgw97mY9iuR71KP3ge5c2zl7q1fWirUKll/vw0Aoj9H3PlDQYLAMmFZcOKFV2QNhsAXZ+cCqbY3eIn9LGBe2lbC7OxNiGyG5wbF+C4aqODTBcv9byO1aLCVUKKnCjTNCrSldcDrVMdTJgiUsS+dZGsfpZZ5U86xKUp4BQkb3psR3E903H3skfFGH70e4nTppwz2tJA4DfHSoOFLrGqTFMGhAcXDa7I6IQeDXSj4BG6EclQv85UcrflLttCj8xRpJI8MheDyW48wGmG20YHjdeoID4qCSYw7TsmvU50GHnzbW0Ek3TZuQzlI9bD1pz2KkVN9s9MOXqeGVUL3AMSg1A3k8gaMxVJ1D6x8GJTZUqGygbWk4pX9N0ScTlyZaSzpEtdQP1NR7JwLmiUc0I4iuCH/fw3dghFfxicpQ8kCzAitY2fuMyjlDEg79WMofnSc0CByllMM06IJlRrRuRX22OLI+hM9NeuLP/Z6xizyBKpuxS7aY5WmezxZpCrM0mccXvJgvoMoj6L0KsrQOHB4O37o4zjiMDn7u7dcq+xp7sYCiLpK4OL8X+fzcXpzZiJeXIf3DMvjn+8tdiOP4/zKcLoOw5WDqUVvf/J934d4bf+hgB99wZMISkVuPfZj+6z6wIwMIdgo9aPPdS3jCDr8AOQpffyEGAAA=</values>
         <workflow_reference/>
@@ -550,7 +550,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
@@ -561,10 +561,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 13:49:31</sys_created_on>
         <sys_id>54f2fc68c3882610fc99f3ddd4013179</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:49</sys_updated_on>
         <ui_id>92c4c1e6-3a38-4318-9e15-b00f93fc221b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -576,7 +576,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -587,10 +587,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 13:49:31</sys_created_on>
         <sys_id>58f2fc68c3882610fc99f3ddd401314a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:49</sys_updated_on>
         <ui_id>3f38439b-dd85-4f19-9593-86aa67a47f5d</ui_id>
         <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnWaAky69bkCJAgaYBkiCXNhCWFGUTpUiVpPyo4X/vUg/HSB2kKHLsTZxd7s4sZ3UIdOPqxtlHfWWtWKlg+e05DITyGH4fAgUVD5YB06oQTmiVt0AYbEA2PnALu9E11MCE24++N4SkfEQwXghbS9g/vZPG1kIWhvd9azBY3XETLA+vQm5f81wC5RKrPTgj1AqviwJPJYEyXrCYpck0TQhJ5pOYTlMaJ0UKHFLMGy5eDzJGX1okfFOf74e4HTppU3haMQkDvnNcFRxblyAtD4MKVAFOm/0JMRyKOyVfgLVQDssFPnlnxS+snWSZTyw5amS8C56OeT+/DmZrLRi/qz3BDnFAZX+HadlU6munw0+el9BIN0wekcZiPV570p5FT6l8WOvt/dDwRqhWYB+UmoE8ncDhGGjjuPUPwyWvsFBeQV3jcPLa6I1oLyOXKlpJPESl1Fts6j0VAfPEI5wRRDeIf2rhJzDCq7jFMni5o0nBCpa3/sNyzqCEYzuW/GfjCXUCeyl5Nw1MsMyI2l1hnw3vWR/DP8175tvDIZnPShrTdDzLJvPxJJ6l48UCpmPK0oLSKWUlkOieM3z5CB9NVE2Vs97Cx2Pn4QtO/7jCH7EbC8jKLCbZ5d2YTC/txoWteHshkncWwj/hX+4DIeT/QpwvhLB5Z+xeW9v8n/fh2Zu/62A73xScCYtEHj32efjn+8AeDSDYObTV5oeX8IIdfwO1yFfdPQYAAA==</values>
         <workflow_reference/>
@@ -602,7 +602,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</flow>
+        <flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -613,10 +613,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 19:28:44</sys_created_on>
         <sys_id>aff67c98c3c4e210fc99f3ddd40131c5</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:27</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:49</sys_updated_on>
         <ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</ui_id>
         <values>H4sIAAAAAAAA/+1UTW/bMAz9K4PPjuHPtMllKDYUGLCtQFv0shUGLdGJNlnyJDltFuS/j/JHGqwpNgw97mY9iuR71KN3ge5c2zl7qy+sFSsVLL/ch4FQHqPvXaCgwWAZMK24cEKrsgfCYAOy84FrbI3eIH9LGBe2lbC9OxFiayG5wbF+C4aqODTBcvdbyG1bLCVUKKnCjTNCrShdcDrVMdTJgiUsS+dZGsfpeZ5U86xKUp4BQkb3psR3E903H3skfFGH70e4nTppwz2tJA4DfHSoOFLrGqTFMGhAcXDabA+IQeBXSj4Ba6EclQv85UcrflLttCj8xRpJI8MheDiW48wGmK21YHjVeoID4qCSYw7TsmvU50GHnzbW0Ek3TZuQzlI9bD1pz2KkVN+s9cP11PBSqF7gGJSagTycwNEYqs6h9Q+DEhsqVDbQtjSc0r+m6JOJSxOtJB2iWuoHauq9EwHzxCOaEUSXhL/v4Tswwqv4RGUoeaBZgRWs7H1G5ZwhCft+LOWPzhMaBI5SymEadMEyI1p3QX02OLLeh89NeuTP3Y6xszyBKpuxc7aY5WmezxZpCrM0mcdnvJgvoMoj4kbqQJbWgcP9/msXxxm58hsyRw545u3XKvsae7GAoi6SuDi9F/n81F6c2IiXlyH9wzL45/vLXYjj+P8yHC+DsOVg6lFb3/yfd+HeG3/oYAffcGTCEpFbj32Y/us+sCUDCHYMPWjz3Ut4wva/APcmiJ0hBgAA</values>
         <workflow_reference/>
@@ -791,10 +791,10 @@
         <internal_name>bases</internal_name>
         <label_cache>[{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.state","label":"3 - Look Up Record➛Bases Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1546361_bases_bases","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Pending","used":false,"image":"","rawLabel":"Pending","selected":false,"missing":false,"reference":false,"value":"-5","parameters":{"name":"task","dependent_values":[""]}},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"task","dependent_values":[""]}},{"label":"Work in Progress","used":false,"image":"","rawLabel":"Work in Progress","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Complete","used":false,"image":"","rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Incomplete","used":false,"image":"","rawLabel":"Closed Incomplete","selected":false,"missing":false,"reference":false,"value":"4","parameters":{"name":"task","dependent_values":[""]}},{"label":"Closed Skipped","used":false,"image":"","rawLabel":"Closed Skipped","selected":false,"missing":false,"reference":false,"value":"7","parameters":{"name":"task","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current.state","label":"Trigger - Record Created➛Access Registration Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_1546361_bases_access_registration","column_name":"state","choices":[{"label":"-- None --","used":false,"image":"","rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"value":""},{"label":"Open","used":false,"image":"","rawLabel":"Open","selected":false,"missing":false,"reference":false,"value":"1","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Awaiting Approval","used":false,"image":"","rawLabel":"Awaiting Approval","selected":false,"missing":false,"reference":false,"value":"2","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Approved","used":false,"image":"","rawLabel":"Approved","selected":false,"missing":false,"reference":false,"value":"3","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}},{"label":"Reproved","used":false,"image":"","rawLabel":"Reproved","selected":false,"missing":false,"reference":false,"value":"7","parameters":{"name":"x_1546361_bases_access_registration","dependent_values":[""]}}],"usedInstances":{}},{"name":"Created_1.current.base.sys_id","label":"Trigger - Record Created➛Access Registration Record➛Base➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1546361_bases_bases","column_name":"sys_id","usedInstances":{"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0":["conditions"]}},{"name":"fa010c90-a593-47cf-848c-c8a98ad53ad2.record","label":"8 - Update Record➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"18765102-9bd7-40ce-9db4-970c71f4df9a":["record"],"5593de1d-1d52-4ec0-ab0a-01bb8d87c55e":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"785771fa-a5a6-49f9-afd3-3ba8b5413a91.Record.assigned_to","label":"3 - Look Up Record➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"Created or Updated_1.current.base","label":"Trigger - Record Created or Updated➛Access Registration Record➛Base","reference":"x_1546361_bases_bases","reference_display":"Bases","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_access_registration","column_name":"base","usedInstances":{"785771fa-a5a6-49f9-afd3-3ba8b5413a91":["conditions"]}},{"name":"{{static.6b02d8dcc304e210fc99f3ddd401313a}}","label":"Base Managers","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"Created or Updated_1.current.assigned_to","label":"Trigger - Record Created or Updated➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"3dfbdac7-9904-498f-a591-0a41f815635e":["condition"]}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"],"dae6c5d1-9b59-47ef-aae6-9264114df7d8":["record"],"cc741ab3-c8c9-4244-922a-21607d569ab4":["record"],"fa010c90-a593-47cf-848c-c8a98ad53ad2":["record"],"5b8a9ea3-a044-41b5-b83d-1e72fc096d25":["record"]},"attributes":{}},{"name":"cc741ab3-c8c9-4244-922a-21607d569ab4.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"e91d813e-3d49-4f6b-ac01-3ded24062737":["condition"],"3e12d03f-37cf-44d2-816c-d3f3eaf628d1":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b8a9ea3-a044-41b5-b83d-1e72fc096d25.record","label":"11 - Update Record➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"21402778-c6db-445e-8d6e-3f6bf4dab5b5":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.current","label":"Trigger - Record Created➛Record","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"]},"attributes":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Access Registration Record","reference":"x_1546361_bases_access_registration","reference_display":"Access Registration","type":"reference","base_type":"reference","usedInstances":{"1b610954-4444-4887-aae0-cb3bd2ad1c3d":["record"],"dae6c5d1-9b59-47ef-aae6-9264114df7d8":["record"],"cc741ab3-c8c9-4244-922a-21607d569ab4":["record"],"fa010c90-a593-47cf-848c-c8a98ad53ad2":["record"],"5b8a9ea3-a044-41b5-b83d-1e72fc096d25":["record"]},"attributes":{}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.assigned_to","label":"3 - Look Up Record➛Bases Record➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1546361_bases_bases","column_name":"assigned_to","usedInstances":{"cc741ab3-c8c9-4244-922a-21607d569ab4":["approval_conditions"]}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record.maximum_capacity","label":"3 - Look Up Record➛Bases Record➛Maximum Capacity","reference":"","reference_display":"Maximum Capacity","type":"integer","base_type":"integer","parent_table_name":"x_1546361_bases_bases","column_name":"maximum_capacity","usedInstances":{"3f38439b-dd85-4f19-9593-86aa67a47f5d":["condition"],"88d0dcb9-1452-4985-b79f-d287de7da3a7":["maximum_capacity"],"fda019b4-497a-4311-a002-180a20bb4751":["maximum_capacity"]}},{"name":"287fb1b3-7548-4173-99a6-bc3dbb6bcfa0.Record","label":"3 - Look Up Record➛Bases Record","reference":"x_1546361_bases_bases","reference_display":"Bases","type":"reference","base_type":"reference","usedInstances":{"88d0dcb9-1452-4985-b79f-d287de7da3a7":["record"],"fda019b4-497a-4311-a002-180a20bb4751":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
-        <name>Access Registration Lifecycle</name>
+        <name>BASES: Approval Access Registration</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Access Registration Lifecycle">99f89f08c300e210fc99f3ddd4013192</parent_flow>
+        <parent_flow display_value="BASES: Approval Access Registration">99f89f08c300e210fc99f3ddd4013192</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -806,7 +806,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6dd14918c308e210fc99f3ddd40131cd</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -814,7 +814,7 @@
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:51</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -875,7 +875,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</model>
+        <model display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</model>
         <model_id>6dd14918c308e210fc99f3ddd40131cd</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_6dd14918c308e210fc99f3ddd40131cd</name>
@@ -898,14 +898,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:16:07</sys_created_on>
         <sys_id>a5d14918c308e210fc99f3ddd40131d0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:29</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -959,7 +959,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</model>
+        <model display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</model>
         <model_id>6dd14918c308e210fc99f3ddd40131cd</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_6dd14918c308e210fc99f3ddd40131cd</name>
@@ -982,14 +982,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:16:08</sys_created_on>
         <sys_id>f9d14918c308e210fc99f3ddd40131f5</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:29</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1009,18 +1009,18 @@
     <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
         <comment>O fluxo é disparado quando um registro é criado na tabela Access Registration e quando a função não for Base Manager</comment>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <name>Created</name>
         <remote_sys_id/>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:16:08</sys_created_on>
         <sys_id>7dd18918c308e210fc99f3ddd4013115</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 13:26:32</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:25</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
-        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FVVPLZAClOSb8pYmWTTAdgM42fZhGwgUL7ZQmvKKlLLeRf69Q11sWZId37JJXgKYpDiHh2fODPPlhy1wyIR9bt/jUDD7zI6kZonE4n4xZzCszXAg8czMzbCkWMfJwj7XScrO7DihLLHPnTM7wyJldwt1Q+EjWJp/UX5ul9Pw+1vg9HsDb+AEIVZMBZgQplSQsEmkdIJ1FEtYTSM1F3jxd/nRRb7IGq8vItNI0IRJ+/zLw5k9xwlE1AbNj8ZUZCARTrDvMkQ8x3NdhNxRzwkHXui41MMMIdiwyUTjCLqDkNX52TfNJGUQimOhWAdXCcP0VorFcsUUqC7ImuFvKvoOu4+QWccZYCesmFv+DEpWimEyjSPCbuc5GflIgbOYjEU6k58K/IZPxnEqdMUnjKQK9mNzA9mAKBHxu2n8OK4CfohkfrpyUsQEi+UvrHUShalmyhDOIwHUBwU3Kk6THP34+vJ2fBX8c3F/+ef1OBhf392Pby7vr6/sp/xcwdfU7FggLLEExXGeliL4EDFhLjBhX1OmTJSSe0WSaK4viI4yVsJ6Olvp+TKWNCql0tA0qabUuqbLo1WXitBGWZPa5pW0eSqJGfrl3xQhjxLq9XwyAsGNEHYdxInvc49S2kOOB9LbW8GDAcaU4Q0KDnlNwfWzdyDWHTTUD71Ny+XILmLuIfRKci4S7mA1z2LKxNVqOxsmJxNQXiTnqTZsPWKpVaDjAFMa1Hg0SwHTc/IuztbW+POqTlIJWwTLG2prOydyyehHcEzQEGRoxVa+Jczzj+WW41RaMVwl/LFImgBZ2qo8j9/M8KTkmN8xwYiuyYJ/VvVff0VKRXJSQ70MmrPSirkMB/KyqiMVsdWRwR8OTOw2v1mDt0Zt2juNHYfzkHEXDU0SO8gLuYOGqI859RAibi2N22A2otSN23+RdN4vmVWuO7GDypoUl+BRXfg7KSZbl1tFglFD6RmXp4HmnAiaa6A1vM/by/yWsiyGr9bVue1oJ24BMM0wfEF39UCzYAez4yJ+BN89wOhCTP6bJHEqadN5zJ5WJK3VCuvXkr/fTmh6PIa2diuA9RWvZHcrhiuNYrk4gdF53Al91mMI/M0Dawv7vh8S7HI+HAyZ6zSMbgWjE9u7MLhnhJV1KXOT2XVqJOuS1h42dwTAluXtDfB4syuF2Wl1xdz7MLXHKZMBQE0CYWyr5W0TEVFWzR2c2K0o2SqVj01uPvJJ3xkOyRAeIpDcvMdC7PTcPvaHA2/UbyR3C8o2mLqDhJ/yPFELlQPZkPifi6m39fJ+SYUqprUpMvvXXgndaf4NLoLU6p+5Fiv3jzixPsXy95vVOuuOQVnL36inKsK7oDAXa70sjDDW01YXAKH/gPG10KZ73MDKa76JGnrI1o919JuI9UZ9n3vdbsL9LjdZgdkM8803DTsmQ7Yxrbq6h121nXWmyMZyf4BaGzKp9wFbGpVTkeKcnBT35Ujxjm6Oqlzc+BA8BOw7qlZ5C3FMyTIxWRDzuk9fxRZMWBDEirhV/h8Q3vXhwtJTBpQK6IIhoGWiH2vQ9YLRhrJU8M8FUvTVrcIFw1bZK71qTWrc+mmfsIwOcb/vbehy/eYTtgvQM3jffIXaOwGyrnzaWqb227e5Z2ehqqlzXRE7lqCTnrq7Dh136s5K9Nypj68x2x7gHSjeaPV4+B82VAYx9x4AAA==</trigger_inputs>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuvgS5y1NvGiA7Qa1ve3DIhUoaWgLpSmvSCnxLvLvHepiy7o4lu1ssi8BTFKcM4dnzpD58l1nxAWmX+kz4jLQL/SAS4g4YbP1CnBYqmGHk6WaWxLuExlGa/1KRjFc6GHkQ6RfmRd6QlgM07W48/EjXJp+kX+u59P4+8kx+72BPTAdlwgQDvE8EMKJYB4IGREZhBxX+4FYMbL+O//oOl2kTXYXeYuA+RFw/erLw4W+IhFGlArN98pUoCB51CMjCwzPNm3LMgzrsme6A9s1Ld8mYBi4YZWJSgqygZBt/vAkgfuAoShhAhq4ioD495ytNysWSHVG1pI8ieAb7n5pqHUUELsH2dzmp5Ozkg17izDw4H6VkpGOZDizyZDFS/4pw6/4BEpiJgs+cSQWuB+sFGQFIkdEp4vwcVIE/BDwNLt8koUeYZtfRMoocGMJQhFOA4bUOxk3IoyjFP1kfHM/uXX+uZ7d/DGeOJPxdDa5u5mNb/XnNC/na6x2zBDmWJwsneeNCD4EwNQBRvA1BqGi5NwLLwpW8tqTQQI5rOeLrZ5vQu4HuVQqmvaKKbGr6Ty14lANo1XWXmnzQtr/jv+qSzcb7CbVwYAQH0iLVF1akmo5yQZosiHfcnb7RJuPHKLanmG8kW6zyjpatsvQB3a73U7HyfkcJRbwVSwVW4+ES+HI0CG+75R4VEsR00s6znKri/ll+UYxxy2czQnVRZwSuWH0I1ojaghLsWAr3RLn6cd8y0nMtRCPEv9oXhwhWVIrzI3eLck855hOgYEnS7Kgn0X515+BEAGfl1Bvgqas1GJuwqG8tCKlLLY4MfjDkRVc5zep8Fap5M5lbJqUukAtY6iK2DRsl5rG0OgT6tuG4VmlMq6DaUUpK6f/KuXcrZhFqjt2gMqqFOfgjbLwD1JMsiu3ggSlhtwzbs4DzTwTNEtBq3if3cn8NrLMhm931bkvtTP3euInBL/wD/VAteAAs6MsfETfPcLoXOL9N4/CmPtV51F7agHXtiu0X3L+fj2j6dEQ7697AeyueCO72zJcaJTw9RmMzqamO4IeGOhvNlqb2x+NXI9YlA4HQ7DMitFtYTRi+ykM7gVhJU3KbDO7Ro0kTdLqYHMnAKxZXmeAp5tdLsxGq8vmfg5Te1wAdxBq5DBlWzVvm7PAh2Lu6MKuRUm2pXxqcdPLkdc3h0NviA8RLG7aA5eYPatPRsOBfdmvFHcNyj6YsoGEH/I8EWuRAmkp/M/Z1Pt6Yh+j0KNeHekxCZBStZ3u3ZjjfTX9hmRBSh1RHZSWOkoYaZ9C/tvddp02BWx06av1XG35EBTqqLXXheGGclG7F2Do33F8J7S6T7aw8pavpIoekt20Tn4lQe+yP6J2s7/QUZO/bMG0w3z314gDiyFpLaum+8Sh2k4aS6T1AnCEWisyKd8M9lxdzkWKeXZSrNcjxT75ulTUYuvT8Biw76B/dbphndKyVExwQlr26dtQwwkNg2gB1fL/DOJL311rcgFIKcN7MQbUVPRTDbrcMOpQNgr+sUCym3atceGwlt+e3rQnVU49aTrNbs0I/CHp9+2Wy+6o+pJtQvECyHffljqrvpH2vb2p277VPRu7U0mSu//bOLDvnDXr5uZzWtaN7eelrE9vLPve4Q0o3kHLOOzJ8/A/vBIR3vkeAAA=</trigger_inputs>
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance_v2>
@@ -1032,7 +1032,7 @@
         <comment>Atualiza campo de capacidade maxima para +1</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>13</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -1054,7 +1054,7 @@
         <comment>Solicita aprovação do gerente de base</comment>
         <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>6</order>
         <parent_ui_id/>
@@ -1076,7 +1076,7 @@
         <comment>Atualiza status para aprovado</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>8</order>
         <parent_ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</parent_ui_id>
@@ -1098,7 +1098,7 @@
         <comment>Atualiza campo de capacidade maxima para -1</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>5</order>
         <parent_ui_id>3f38439b-dd85-4f19-9593-86aa67a47f5d</parent_ui_id>
@@ -1120,7 +1120,7 @@
         <comment>Envia notificação de criação de registro</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>2</order>
         <parent_ui_id/>
@@ -1142,7 +1142,7 @@
         <comment>Envia notificação quando aprovado</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>9</order>
         <parent_ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</parent_ui_id>
@@ -1164,7 +1164,7 @@
         <comment>Atualiza status para aguardando aprovação</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>1</order>
         <parent_ui_id/>
@@ -1186,7 +1186,7 @@
         <comment>Atualiza status para reprovado</comment>
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>11</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -1208,7 +1208,7 @@
         <comment>Envia notificação se reprovado</comment>
         <compiled_snapshot>0d8dd9f10f11101051218e8ebc767e27</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>12</order>
         <parent_ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</parent_ui_id>
@@ -1230,7 +1230,7 @@
         <comment>Encontra o registro da Base Solicitada</comment>
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <generation_source/>
         <order>3</order>
         <parent_ui_id/>
@@ -1254,7 +1254,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1265,10 +1265,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:16:08</sys_created_on>
         <sys_id>31d18918c308e210fc99f3ddd401310f</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:51</sys_updated_on>
         <ui_id>3e12d03f-37cf-44d2-816c-d3f3eaf628d1</ui_id>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDTiX0pAgcBCqQNkAS5tIGwIimbLUWqJGXHNfzvXephB42LNmiOvZmz3OXMaAfeEd26pnX2Xl9YK5aKzD8/BkQoj+HvHVFQczInVCsmnNCq6ICArEG2vnDLG6PXnL1HjAnbSNg+nCjRlZDM8GF+AwanOG7IfPdLSTDsrCKo4hmNaZpM0ySKkvMsLqdpGScsBQ4pDpRQcolXFyOxd9cdEvyWsds2HrfOCLUcztfDlLsR1IZ5VnEUEP7kuGIc+VQgLQ9IDYqB02Z7QAwHdqPkEVgJ5XAc8ZefrPiBDyZ57i9WHCVS3hcPx2KwrIerS3CAVFrqWjNcpSstKLe9OYxX0Eq3eI71F24aL7VvcVDKsVvLtlafekfIYcD4hRBpLZLgjVfqqQ86qruV3tyOLK+E6lwZilJTkIcTOPSubJ3nsyNc8hoHFTU0DTpa+A0QXTNyqcOlxENYSb3BR/2+hUA98RCNhfAK8csOfgAjvIqPOAabe5olWEGLbjdxHNrEyT4gdmsXEqw9ikR3i++tp9hLHsQVvT++hRrRuAt8ec0HHfvg5ao/2/LdjtKzLIYyndBzOptkSZZNZkkCkySeRmcsn86gzEJki3pBFtaB4/v9lzaKUtztr5w6XKQXCXmrsa9L1wzyKo+j/HS6sumpdJ3I1SsjlfwhUv57/mWioij6H6l/jpSwRR+EQVv3+Bsm6tHHp3/z4DUVFqnde+zD+B/jC1tcLkGfQxttvnlRR2z/E7/ZA9qtBgAA</values>
         <workflow_reference/>
@@ -1280,7 +1280,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1291,10 +1291,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-02-26 20:16:08</sys_created_on>
         <sys_id>3dd18918c308e210fc99f3ddd401310d</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:51</sys_updated_on>
         <ui_id>e91d813e-3d49-4f6b-ac01-3ded24062737</ui_id>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8lYJnWdDTiX0pjAQBCqQN0AS5tIGwIimbKEWqJGXHNfzvXephG42LNmiOvZmz3OXMaAfeEd26pnX2QS+sFUtF5l+eAiKUx/D3jiioOZkTqhUTTmhVdEBA1iBbX1g0jdFrzt4jxoRtJGwfz5ToSkhm+DC/AYNTHDdkvvulJBh2VhFU8YzGNE2maRJFyWUWl9O0jBOWAocUB0ooucSrVyOxd7cdEvyWsds2HrfOCLUczrfDlPsR1IZ5VnEUEP7suGIc+VQgLQ9IDYqB02Z7QAwHdqfkEVgJ5XAc8ZefrfiBDyZ57i9WHCVS3hcPx2KwrIera3CAVFrqWjNcpSstKLe9OYxX0Ep3dYr1F+4aL7VvcVDKsVvLtlafekfIYcD4hRBpLZLgjVfqqQ86qvuV3nweWd4I1bkyFKWmIA8ncOhd2TrPZ0e45DUOKmpoGnS08BsgumbkUodLiYewknqDj/p9C4F64iEaC+EN4tcd/AhGeBUfcQw29zRLsIIW3W7iOLSJk31A7NZeSbD2KBLdLb63nmIveRBX9P74FmpE4xb48poPOvbBy1U/2fLdjtKLLIYyndBLOptkSZZNZkkCkySeRhcsn86gzELoNh5kYR04vt9/baMoZTDk4GVC3mrs69I1g7zK4yg/n65sei5dZ3L1ykglf4iU/55/magoiv5H6p8jJWzRB2HQ1j3+hol68vHp3zx4TYVFag8e+zD+x/jCFpdL0FNoo803L+qI7X8Cwr39Nq0GAAA=</values>
         <workflow_reference/>
@@ -1306,7 +1306,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
@@ -1317,10 +1317,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 14:00:14</sys_created_on>
         <sys_id>4165b46cc3882610fc99f3ddd40131fb</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:51</sys_updated_on>
         <ui_id>92c4c1e6-3a38-4318-9e15-b00f93fc221b</ui_id>
         <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
         <workflow_reference/>
@@ -1332,7 +1332,7 @@
         <connected_to/>
         <decision_table/>
         <display_text/>
-        <flow display_value="Access Registration Lifecycle">6dd14918c308e210fc99f3ddd40131cd</flow>
+        <flow display_value="BASES: Approval Access Registration">6dd14918c308e210fc99f3ddd40131cd</flow>
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
@@ -1343,10 +1343,10 @@
         <sys_created_by>Ludmila</sys_created_by>
         <sys_created_on>2025-02-27 14:00:13</sys_created_on>
         <sys_id>4565b46cc3882610fc99f3ddd40131f6</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:30</sys_updated_on>
+        <sys_updated_on>2025-02-28 04:02:51</sys_updated_on>
         <ui_id>3f38439b-dd85-4f19-9593-86aa67a47f5d</ui_id>
         <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdDDsmPfAgcBCiQNkAS5tIGwpCibKEWqIuVHBf97l3rYRusiDZpjb+bscndmxIEbomtb1tY862tjxEqRxZdXjwjlMPzdEAUFJwvCtMqEFVqlLeCRDcjaFe5hN1pCCUzY/ehrHQQxHwVYz4QpJexf3mhjayGzivd7S6hwuuUVWTS/lESGU/IA8nDOQhZH0zgKguhqEtJpTMMoi4FDjAMlUC6xdTkQHt21iPdHJXZfOtzYSqhVf77rpzwNoK4yxyoMPMJ3lquMI58cpOEeKUBlYHW1PyIVh+xByROwFsriOOKad0b8wIVRkrjGnKNExrvi8Zj29nVwfgMWkErNbF31rWytBeOmMyfjOdTSLs+xruGhdFK7KxaoHG5rWRfqc+cIOQ4YvhYitUESvHRKHfVeR/601tvHgeWtUK0rfVFqBvJ4Aove0do6Pg3hkhc4KC2gLNHRtKz0RrSXkUvhryQe/FzqLS5179AH5oj7aCz4t4jftPALVMKpuMcxeLmjScEIlrZvFsehTZwcPGL2ZinBmJNIdDf9XjuKneReXNr5466wSpT2GjdveK/j4P0egbPX3zTR1SynIY3Hs2RyNZ6Es3g8n8N0TFmcUTqlLIfAf+QMH5CP314UdZGyPgiHQ5eEC3n5uMHvS9gckjwJg+RywibTSwm7kK13xip6I1bum/5lqoIg+B+rf46VMGkXhl5bu/wDU/XqItTtPHrNhEFqzw77NPz/uMIeH5dg59BWV9+cqBN2+AmBPiRAyQYAAA==</values>
         <workflow_reference/>
@@ -1521,12 +1521,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ced18918c308e210fc99f3ddd401314e</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:04:31</sys_updated_on>
-        <trigger display_value="">f3ad64e0c3882610fc99f3ddd40131bf</trigger>
+        <sys_updated_on>2025-02-28 04:02:26</sys_updated_on>
+        <trigger display_value="">ce26332cc3486610fc99f3ddd40131cc</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=99f89f08c300e210fc99f3ddd4013192"/>
 </record_update>

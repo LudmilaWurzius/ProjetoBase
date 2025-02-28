@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="Bases">bbd8eee4c3c06610fc99f3ddd40131fd</category>
+        <order>600</order>
+        <property display_value="x_1546361_bases.integration_host" name="x_1546361_bases.integration_host">24ec3260c3446610fc99f3ddd4013120</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:53:22</sys_created_on>
+        <sys_id>e92d7660c3446610fc99f3ddd40131cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1546361_bases.integration_host.Bases</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_e92d7660c3446610fc99f3ddd40131cd</sys_update_name>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:53:22</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</application>
+        <file_path/>
+        <instance_id>64d4f8551b06b11cc84543f4bd4bcb25</instance_id>
+        <instance_name>dev192592</instance_name>
+        <name>sys_properties_category_m2m_e92d7660c3446610fc99f3ddd40131cd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Bases">bbd8eee4c3c06610fc99f3ddd40131fd</category><order>600</order><property display_value="x_1546361_bases.integration_host" name="x_1546361_bases.integration_host">24ec3260c3446610fc99f3ddd4013120</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>Ludmila</sys_created_by><sys_created_on>2025-02-27 23:53:22</sys_created_on><sys_id>e92d7660c3446610fc99f3ddd40131cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1546361_bases.integration_host.Bases</sys_name><sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package><sys_policy/><sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope><sys_update_name>sys_properties_category_m2m_e92d7660c3446610fc99f3ddd40131cd</sys_update_name><sys_updated_by>Ludmila</sys_updated_by><sys_updated_on>2025-02-27 23:53:22</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>1842845117</payload_hash>
+        <record_name>x_1546361_bases.integration_host.Bases</record_name>
+        <reverted_from/>
+        <source>3ec58658c34ce210fc99f3ddd40131cd</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:53:22</sys_created_on>
+        <sys_id>292d7660c3446610fc99f3ddd40131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19549d4426c0000001</sys_recorded_at>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:53:22</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>2d2d76607a4466102c527cb8acc5aacf</update_guid>
+        <update_guid_history>2d2d76607a4466102c527cb8acc5aacf:1842845117</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:33:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>1ce8058d92744eda87934f340b20b664</sys_id>
+        <sys_metadata>e92d7660c3446610fc99f3ddd40131cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1546361_bases.integration_host.Bases</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_scope_delete display_value="">30db4dd8764f4494b28565ecf204f329</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_e92d7660c3446610fc99f3ddd40131cd</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_e92d7660c3446610fc99f3ddd40131cd">292d7660c3446610fc99f3ddd40131d0</sys_update_version>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:33:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

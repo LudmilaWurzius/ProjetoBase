@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Duplicate Base</name>
+        <name>BASES: Duplicate Base</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,7 +29,7 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
-    // Normaliza os valores removendo espaços extras e convertendo para minúsculas (somente se os campos estiverem preenchidos)
+    // Normaliza os valores para a validação (sem alterar o que o usuário digitou)
     var formattedName = current.name ? current.name.trim().toLowerCase() : "";
     var formattedCity = current.city ? current.city.trim().toLowerCase() : "";
     var formattedState = current.state_province ? current.state_province.trim().toLowerCase() : "";
@@ -43,12 +43,12 @@
         if (baseByName.name.trim().toLowerCase() === formattedName) {
             gs.addErrorMessage("Já existe uma base cadastrada com esse nome.");
             current.setAbortAction(true);
-            return; // Interrompe a execução imediatamente
+            return;
         }
     }
 
     /** ----------------- ETAPA 2: Verificar Cidade + Estado ---------------- **/
-    if (formattedCity !== "" && formattedState !== "") {  // Só verifica se ambos os campos estão preenchidos
+    if (formattedCity !== "" && formattedState !== "") {
         var baseByLocation = new GlideRecord('x_1546361_bases_bases');
         baseByLocation.addQuery('city', formattedCity);
         baseByLocation.addQuery('state_province', formattedState);
@@ -65,12 +65,7 @@
             }
         }
     }
-
-    // Atualiza os valores formatados para garantir que sejam salvos corretamente no banco de dados
-    current.name = formattedName;
-    current.city = formattedCity;
-    current.state_province = formattedState;
-
+    
 })(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -79,15 +74,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d1c86b4cc340e210fc99f3ddd40131bf</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Duplicate Base</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>BASES: Duplicate Base</sys_name>
         <sys_overrides/>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name>sys_script_d1c86b4cc340e210fc99f3ddd40131bf</sys_update_name>
         <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 13:51:28</sys_updated_on>
+        <sys_updated_on>2025-02-28 01:56:32</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

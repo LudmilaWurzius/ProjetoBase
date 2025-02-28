@@ -3,56 +3,56 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>temperature</element>
             <position>0</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-25 19:45:42</sys_created_on>
-            <sys_id>5241f7f7c3ff5210fc99f3ddd40131f2</sys_id>
+            <sys_created_by>Ludmila</sys_created_by>
+            <sys_created_on>2025-02-28 01:52:13</sys_created_on>
+            <sys_id>2a58d724c3c46610fc99f3ddd40131ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data" display_value="Data" name="x_1546361_bases_bases" sys_domain="global" view="Default view">96f033f7c3ff5210fc99f3ddd40131c2</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-25 19:45:42</sys_updated_on>
+            <sys_updated_by>Ludmila</sys_updated_by>
+            <sys_updated_on>2025-02-28 01:52:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>1</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-25 19:45:42</sys_created_on>
-            <sys_id>d641f7f7c3ff5210fc99f3ddd40131f2</sys_id>
+            <sys_created_by>Ludmila</sys_created_by>
+            <sys_created_on>2025-02-28 01:52:13</sys_created_on>
+            <sys_id>22581b24c3c46610fc99f3ddd4013100</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data" display_value="Data" name="x_1546361_bases_bases" sys_domain="global" view="Default view">96f033f7c3ff5210fc99f3ddd40131c2</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-25 19:45:42</sys_updated_on>
+            <sys_updated_by>Ludmila</sys_updated_by>
+            <sys_updated_on>2025-02-28 01:52:13</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>latitude</element>
             <position>2</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-25 19:45:42</sys_created_on>
-            <sys_id>5e41f7f7c3ff5210fc99f3ddd40131f2</sys_id>
+            <sys_created_by>Ludmila</sys_created_by>
+            <sys_created_on>2025-02-28 01:52:13</sys_created_on>
+            <sys_id>2a581b24c3c46610fc99f3ddd4013100</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data" display_value="Data" name="x_1546361_bases_bases" sys_domain="global" view="Default view">96f033f7c3ff5210fc99f3ddd40131c2</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-25 19:45:42</sys_updated_on>
+            <sys_updated_by>Ludmila</sys_updated_by>
+            <sys_updated_on>2025-02-28 01:52:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>longitude</element>
             <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-02-25 19:45:42</sys_created_on>
-            <sys_id>d241f7f7c3ff5210fc99f3ddd40131f3</sys_id>
+            <sys_created_by>Ludmila</sys_created_by>
+            <sys_created_on>2025-02-28 01:52:13</sys_created_on>
+            <sys_id>22581b24c3c46610fc99f3ddd4013101</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Data" display_value="Data" name="x_1546361_bases_bases" sys_domain="global" view="Default view">96f033f7c3ff5210fc99f3ddd40131c2</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-02-25 19:45:42</sys_updated_on>
+            <sys_updated_by>Ludmila</sys_updated_by>
+            <sys_updated_on>2025-02-28 01:52:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

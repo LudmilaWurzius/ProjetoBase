@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Weather integration endpoint</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_1546361_bases.integration_endpoint</name>
+        <read_roles/>
+        <suffix>integration_endpoint</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 22:33:33</sys_created_on>
+        <sys_id>e2b96a28c3c06610fc99f3ddd401315e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_1546361_bases.integration_endpoint</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_properties_e2b96a28c3c06610fc99f3ddd401315e</sys_update_name>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:46:24</sys_updated_on>
+        <type>string</type>
+        <value>https://yahoo-weather5.p.rapidapi.com/weather</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e2b96a28c3c06610fc99f3ddd401315e"/>
+</record_update>

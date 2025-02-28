@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Bases">bbd8eee4c3c06610fc99f3ddd40131fd</category>
+        <order>400</order>
+        <property display_value="x_1546361_bases.integration_retry_count" name="x_1546361_bases.integration_retry_count">baea2268c3c06610fc99f3ddd4013186</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 22:41:55</sys_created_on>
+        <sys_id>0bcc6e2cc3c06610fc99f3ddd401315b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1546361_bases.integration_retry_count.Bases</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_0bcc6e2cc3c06610fc99f3ddd401315b</sys_update_name>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 22:41:55</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

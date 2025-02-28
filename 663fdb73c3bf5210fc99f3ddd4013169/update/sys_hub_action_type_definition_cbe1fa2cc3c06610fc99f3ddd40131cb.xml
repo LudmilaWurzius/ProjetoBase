@@ -1,0 +1,2943 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>integration_yahoo_weather_api</internal_name>
+        <label_cache>[{"name":"{{action.location}}","label":"action➛location","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.format}}","label":"action➛format","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.u}}","label":"action➛u","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].endpoint}}","label":"step➛Varibles Inicialization➛endpoint","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1bc2a12b-b5ed-468d-9881-857878057ac2"}},{"name":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].apikey}}","label":"step➛Varibles Inicialization➛apikey","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1860371d-6f84-45f6-b410-0df0edfd6ca7"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].response_body}}","label":"step➛Weather Integration➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].root}}","label":"step➛Parser ResponseBody➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDd37ab53c4ec0a610a7957f2a0de0bb0e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"761c946e-4efa-4a66-bd9a-59f660feace0"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].error_code}}","label":"step➛Weather Integration➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].__step_status__.code}}","label":"step➛Weather Integration➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].__step_status__.code}}","label":"step➛Parser ResponseBody➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>e90bb17cc3c0a610fc99f3ddd4013105</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Integration Yahoo Weather API</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:04:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cbe1fa2cc3c06610fc99f3ddd40131cb</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_name>Integration Yahoo Weather API</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_cbe1fa2cc3c06610fc99f3ddd40131cb</sys_update_name>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:28</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cbe1fa2cc3c06610fc99f3ddd40131cb</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>11a2fae0c3046610fc99f3ddd4013107</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">51a2bae0c3046610fc99f3ddd40131ea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>cbe1fa2cc3c06610fc99f3ddd40131cb</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>95a2fae0c3046610fc99f3ddd4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">11a2bae0c3046610fc99f3ddd40131fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>cbe1fa2cc3c06610fc99f3ddd40131cb</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:55:56</sys_created_on>
+        <sys_id>0c0ebd30c304a610fc99f3ddd40131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:55:56</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</table>
+        <value>{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>cbe1fa2cc3c06610fc99f3ddd40131cb</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>15a2fae0c3046610fc99f3ddd4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>cbe1fa2cc3c06610fc99f3ddd40131cb</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>1da2fae0c3046610fc99f3ddd4013105</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <table>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN15643e64c3046610fc99f3ddd40131ea,977ab53cc3c0a610fc99f3ddd401310a,e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</action>
+        <cid>3ce6bfd0-15f4-4a03-9df4-25f15babd36d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Varibles Inicialization</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>15643e64c3046610fc99f3ddd40131ea</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:09:11</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15643e64c3046610fc99f3ddd40131ea</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>ad647e64c3046610fc99f3ddd401310f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:09:11</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    outputs.apikey = gs.getProperty("x_1546361_bases.integration_apikey", 0);&#13;
+    outputs.endpoint = gs.getProperty("x_1546361_bases.integration_endpoint", "");&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>15643e64c3046610fc99f3ddd40131ea</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>e9647e64c3046610fc99f3ddd401310f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:07</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea^id=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=15643e64c3046610fc99f3ddd40131ea^sys_idNOT IN21643e64c3046610fc99f3ddd40131f9,55643e64c3046610fc99f3ddd40131f4"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1bc2a12b-b5ed-468d-9881-857878057ac2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>endpoint</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>endpoint</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Varibles Inicialization">15643e64c3046610fc99f3ddd40131ea</model>
+        <model_id>15643e64c3046610fc99f3ddd40131ea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>21643e64c3046610fc99f3ddd40131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1860371d-6f84-45f6-b410-0df0edfd6ca7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>apikey</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>apikey</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Varibles Inicialization">15643e64c3046610fc99f3ddd40131ea</model>
+        <model_id>15643e64c3046610fc99f3ddd40131ea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>55643e64c3046610fc99f3ddd40131f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=15643e64c3046610fc99f3ddd40131ea"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea^sys_idNOT IN21643e64c3046610fc99f3ddd40131f8,29643e64c3046610fc99f3ddd40131fb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>apikey</element>
+        <help/>
+        <hint/>
+        <label>apikey</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>21643e64c3046610fc99f3ddd40131f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>endpoint</element>
+        <help/>
+        <hint/>
+        <label>endpoint</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_15643e64c3046610fc99f3ddd40131ea</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>29643e64c3046610fc99f3ddd40131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</action>
+        <cid>9c910656-15e7-41c0-b44e-a3ffaf092e99</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parser ResponseBody</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>977ab53cc3c0a610fc99f3ddd401310a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>977ab53cc3c0a610fc99f3ddd401310a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>137ab53cc3c0a610fc99f3ddd4013127</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <value>{
+    "location": {
+        "city": "Curitiba",
+        "woeid": 455822,
+        "country": "Brazil",
+        "lat": -25.45682,
+        "long": -49.284859,
+        "timezone_id": "America/Sao_Paulo"
+    },
+    "current_observation": {
+        "pubDate": 1740749932,
+        "wind": {
+            "chill": 28,
+            "direction": "NE",
+            "speed": 5
+        },
+        "atmosphere": {
+            "humidity": 71,
+            "visibility": 10,
+            "pressure": 1019
+        },
+        "astronomy": {
+            "sunrise": "6:10 AM",
+            "sunset": "6:48 PM"
+        },
+        "condition": {
+            "temperature": 25,
+            "text": "Cloudy",
+            "code": 26
+        }
+    },
+    "forecasts": [
+        {
+            "day": "Fri",
+            "date": 1740758400,
+            "high": 30,
+            "low": 18,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sat",
+            "date": 1740844800,
+            "high": 32,
+            "low": 18,
+            "text": "Scattered Showers",
+            "code": 45
+        },
+        {
+            "day": "Sun",
+            "date": 1740931200,
+            "high": 33,
+            "low": 18,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Mon",
+            "date": 1741017600,
+            "high": 31,
+            "low": 18,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Tue",
+            "date": 1741104000,
+            "high": 30,
+            "low": 17,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Wed",
+            "date": 1741190400,
+            "high": 31,
+            "low": 17,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Thu",
+            "date": 1741276800,
+            "high": 30,
+            "low": 18,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Fri",
+            "date": 1741363200,
+            "high": 30,
+            "low": 17,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sat",
+            "date": 1741449600,
+            "high": 31,
+            "low": 17,
+            "text": "Mostly Cloudy",
+            "code": 28
+        },
+        {
+            "day": "Sun",
+            "date": 1741536000,
+            "high": 30,
+            "low": 17,
+            "text": "Mostly Cloudy",
+            "code": 28
+        },
+        {
+            "day": "Mon",
+            "date": 1741622400,
+            "high": 30,
+            "low": 18,
+            "text": "Showers",
+            "code": 11
+        }
+    ]
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>977ab53cc3c0a610fc99f3ddd401310a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>1b7ab53cc3c0a610fc99f3ddd4013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"location","children":[{"name":"city","children":[],"type":"string","jpath":"$.location.city","previewValue":"Curitiba"},{"name":"woeid","children":[],"type":"string","jpath":"$.location.woeid","previewValue":"455822"},{"name":"country","children":[],"type":"string","jpath":"$.location.country","previewValue":"Brazil"},{"name":"lat","children":[],"type":"string","jpath":"$.location.lat","previewValue":"-25.45682"},{"name":"long","children":[],"type":"string","jpath":"$.location.long","previewValue":"-49.284859"},{"name":"timezone_id","children":[],"type":"string","jpath":"$.location.timezone_id","previewValue":"America/Sao_Paulo"}],"type":"object","jpath":"$.location","previewValue":""},{"name":"current_observation","children":[{"name":"pubDate","children":[],"type":"string","jpath":"$.current_observation.pubDate","previewValue":"1740749932"},{"name":"wind","children":[{"name":"chill","children":[],"type":"string","jpath":"$.current_observation.wind.chill","previewValue":"28"},{"name":"direction","children":[],"type":"string","jpath":"$.current_observation.wind.direction","previewValue":"NE"},{"name":"speed","children":[],"type":"string","jpath":"$.current_observation.wind.speed","previewValue":"5"}],"type":"object","jpath":"$.current_observation.wind","previewValue":""},{"name":"atmosphere","children":[{"name":"humidity","children":[],"type":"string","jpath":"$.current_observation.atmosphere.humidity","previewValue":"71"},{"name":"visibility","children":[],"type":"string","jpath":"$.current_observation.atmosphere.visibility","previewValue":"10"},{"name":"pressure","children":[],"type":"string","jpath":"$.current_observation.atmosphere.pressure","previewValue":"1019"}],"type":"object","jpath":"$.current_observation.atmosphere","previewValue":""},{"name":"astronomy","children":[{"name":"sunrise","children":[],"type":"string","jpath":"$.current_observation.astronomy.sunrise","previewValue":"6:10 AM"},{"name":"sunset","children":[],"type":"string","jpath":"$.current_observation.astronomy.sunset","previewValue":"6:48 PM"}],"type":"object","jpath":"$.current_observation.astronomy","previewValue":""},{"name":"condition","children":[{"name":"temperature","children":[],"type":"string","jpath":"$.current_observation.condition.temperature","previewValue":"25"},{"name":"text","children":[],"type":"string","jpath":"$.current_observation.condition.text","previewValue":"Cloudy"},{"name":"code","children":[],"type":"string","jpath":"$.current_observation.condition.code","previewValue":"26"}],"type":"object","jpath":"$.current_observation.condition","previewValue":""}],"type":"object","jpath":"$.current_observation","previewValue":""},{"name":"forecasts","children":[{"name":"forecasts_object","children":[{"name":"day","children":[],"type":"string","jpath":"$.forecasts[*].day","previewValue":"Fri"},{"name":"date","children":[],"type":"string","jpath":"$.forecasts[*].date","previewValue":"1740758400"},{"name":"high","children":[],"type":"string","jpath":"$.forecasts[*].high","previewValue":"30"},{"name":"low","children":[],"type":"string","jpath":"$.forecasts[*].low","previewValue":"18"},{"name":"text","children":[],"type":"string","jpath":"$.forecasts[*].text","previewValue":"Partly Cloudy"},{"name":"code","children":[],"type":"string","jpath":"$.forecasts[*].code","previewValue":"30"}],"type":"object","jpath":"$.forecasts[*]","previewValue":""}],"type":"array.object","jpath":"$.forecasts[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_977ab53cc3c0a610fc99f3ddd401310a^id=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_element_mapping action="delete_multiple" query="id=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>977ab53cc3c0a610fc99f3ddd401310a</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>977ab53cc3c0a610fc99f3ddd4013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>977ab53cc3c0a610fc99f3ddd401310a</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>d37ab53cc3c0a610fc99f3ddd4013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>977ab53cc3c0a610fc99f3ddd401310a</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>1f7ab53cc3c0a610fc99f3ddd4013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=977ab53cc3c0a610fc99f3ddd401310a^sys_idNOT IN977ab53cc3c0a610fc99f3ddd401311c"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd37ab53c4ec0a610a7957f2a0de0bb0e</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>663fdb73c3bf5210fc99f3ddd4013169</scope_name>
+        <serialized_content>{"FlowDesigner:FDd37ab53c4ec0a610a7957f2a0de0bb0e":{"location":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1f6eca58-bb74-4179-b11a-08c71a3bd045\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3fc63ad1-2205-49ec-8d1a-92936e14bc05\"}"},"timezone_id":"String","timezone_id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timezone_id\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"fbdfe9df-afdd-4eef-9e06-463a30304790\"}"},"woeid":"String","woeid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"woeid\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"dacea28e-2508-4a7b-aa32-cf982fdbf421\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"0246e33c-073a-4171-8cb8-c951e3552924\"}"},"long":"String","long.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"long\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"1596e1c2-dce8-4172-98e4-1f7ffbc32526\"}"}},"location.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"location\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"cfa3713f-bc78-445c-80cf-8da42609796c\"}"},"current_observation":{"atmosphere":{"visibility":"String","visibility.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"visibility\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b0300182-e04d-42d1-a607-c1beb0437e97\"}"},"humidity":"String","humidity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"humidity\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f8416f99-f73b-4acb-9685-d1db6070e05e\"}"},"pressure":"String","pressure.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pressure\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"0ca5ce01-2bb6-4a1f-9dcd-cb007f9dd806\"}"}},"atmosphere.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"atmosphere\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"855b20a7-8302-4563-a693-e6f048d7d8d6\"}"},"condition":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"59c6be91-0937-4bee-9db4-be05a1e8adf7\"}"},"temperature":"String","temperature.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"temperature\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"97d17ac8-19f8-4dcb-b69c-fa5623c71045\"}"},"text":"String","text.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"text\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"94a116da-6174-4935-aef5-0d85f44f1687\"}"}},"condition.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"condition\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"9973ccc5-d67f-46c3-b80c-b172af143cb1\"}"},"astronomy":{"sunrise":"String","sunrise.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sunrise\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"621d4651-8a15-4cb1-82ea-c69aabefd2ba\"}"},"sunset":"String","sunset.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sunset\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8faabad6-0e8b-46f4-9490-2ea661e946ce\"}"}},"astronomy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"astronomy\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"48dfbca4-4f48-4e97-98b6-114ee90454f1\"}"},"pubDate":"String","pubDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pubDate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"1b246b4f-6c59-4db9-b876-630bb4722a20\"}"},"wind":{"chill":"String","chill.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chill\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f35e45-40cd-4882-9355-c681325d5039\"}"},"speed":"String","speed.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"speed\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"17a5ef32-5733-47c1-af5a-df627f02be37\"}"},"direction":"String","direction.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"direction\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"820c2426-a702-4b31-8d6b-9c56249b4e4a\"}"}},"wind.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"wind\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5316e1ff-7a01-4788-8a54-8e97f859e57c\"}"}},"current_observation.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"current_observation\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"fbe93ef7-f545-4571-84b5-f10617ad4bee\"}"},"forecasts":[{"$5_forecasts":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"99012158-a09f-4c35-8f82-ac5edf6ec09e\"}"},"high":"String","high.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"high\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"6fcb533a-7110-45fb-8649-b5422e2a93b4\"}"},"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"64a44b07-7baf-4749-9609-53b0006360e8\"}"},"low":"String","low.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"low\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"d845bef1-8d08-49e4-afe2-40f8c05124be\"}"},"text":"String","text.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"text\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"d248cece-e32b-4ff9-b639-1627866bd169\"}"},"day":"String","day.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"day\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3a1fb6e2-46ff-41f5-a486-aba66abcdffa\"}"}}}],"forecasts.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"forecasts\",\"mandatory\":\"false\",\"child_name\":\"forecasts_object\",\"uiUniqueId\":\"82d230e2-7f46-49cf-9fb4-73114516e96d\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"forecasts_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"3a261d3c-bce5-46ad-9f73-7c965fcc4ce1\"}"}},"FlowDesigner:FDd37ab53c4ec0a610a7957f2a0de0bb0e.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"761c946e-4efa-4a66-bd9a-59f660feace0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDd37ab53c4ec0a610a7957f2a0de0bb0e\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d77ab53cc3c0a610fc99f3ddd401310e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:25</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDd37ab53c4ec0a610a7957f2a0de0bb0e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=761c946e-4efa-4a66-bd9a-59f660feace0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parser ResponseBody">977ab53cc3c0a610fc99f3ddd401310a</model>
+        <model_id>977ab53cc3c0a610fc99f3ddd401310a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_977ab53cc3c0a610fc99f3ddd401310a</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>977ab53cc3c0a610fc99f3ddd401311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=977ab53cc3c0a610fc99f3ddd401310a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_977ab53cc3c0a610fc99f3ddd401310a^sys_idNOT IN9f7ab53cc3c0a610fc99f3ddd401311f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_977ab53cc3c0a610fc99f3ddd401310a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:40:36</sys_created_on>
+        <sys_id>9f7ab53cc3c0a610fc99f3ddd401311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:40:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</action>
+        <cid>3d978acf-0de4-4103-9e5a-5d85caf00d28</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Weather Integration</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:07</sys_created_on>
+        <sys_id>e9647e64c3046610fc99f3ddd4013112</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>29647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>33763628c3046610fc99f3ddd4013140</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:05:12</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>65647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>7f763628c3046610fc99f3ddd401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:24:18</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>a1647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>ad647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>e9647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e9647e64c3046610fc99f3ddd4013112</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>f3763628c3046610fc99f3ddd4013140</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:24:18</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>6d647e64c3046610fc99f3ddd4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>3b763628c3046610fc99f3ddd401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:24:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>a9647e64c3046610fc99f3ddd4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>b3763628c3046610fc99f3ddd401313f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:24:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>21647e64c3046610fc99f3ddd4013138</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>77763628c3046610fc99f3ddd401313f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:05:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"x-rapidapi-host","value":"yahoo-weather5.p.rapidapi.com","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"x-rapidapi-key","value":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].apikey}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>25647e64c3046610fc99f3ddd4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:15:08</sys_created_on>
+        <sys_id>e5647e64c3046610fc99f3ddd4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:15:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>e9647e64c3046610fc99f3ddd4013112</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:24:18</sys_created_on>
+        <sys_id>fb763628c3046610fc99f3ddd401313f</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:05:12</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"location","value":"{{action.location}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"u","value":"c","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e9647e64c3046610fc99f3ddd4013112"/>
+    <sys_hub_action_input action="delete_multiple" query="model=cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN1da27660c3046610fc99f3ddd4013137"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=56957de9-9f92-48ab-a27e-1b3a15340d44</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>location</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>location</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</model>
+        <model_id>cbe1fa2cc3c06610fc99f3ddd40131cb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>1da27660c3046610fc99f3ddd4013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1da27660c3046610fc99f3ddd4013137"/>
+    <sys_hub_action_output action="delete_multiple" query="model=cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN11a2bae0c3046610fc99f3ddd40131fc,51a2bae0c3046610fc99f3ddd40131ea,f3fdbd30c304a610fc99f3ddd4013193"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b0d594c8-c6db-456c-a564-6fe1a251f162,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</model>
+        <model_id>cbe1fa2cc3c06610fc99f3ddd40131cb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>11a2bae0c3046610fc99f3ddd40131fc</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=11a2bae0c3046610fc99f3ddd40131fc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11a2bae0c3046610fc99f3ddd40131fc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3b70cc9e-0365-4604-a277-779068baebb6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</model>
+        <model_id>cbe1fa2cc3c06610fc99f3ddd40131cb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>51a2bae0c3046610fc99f3ddd40131ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:55:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51a2bae0c3046610fc99f3ddd40131ea"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=51a2bae0c3046610fc99f3ddd40131ea"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=00b68557-f40c-4baf-81a0-cf50550e04bf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</model>
+        <model_id>cbe1fa2cc3c06610fc99f3ddd40131cb</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:55:56</sys_created_on>
+        <sys_id>f3fdbd30c304a610fc99f3ddd4013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:55:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f3fdbd30c304a610fc99f3ddd4013193"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f3fdbd30c304a610fc99f3ddd4013193"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN55a2fae0c3046610fc99f3ddd4013108"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</action_type_id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>55a2fae0c3046610fc99f3ddd4013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=55a2fae0c3046610fc99f3ddd4013108^sys_idNOT IN05afbdb0c304a610fc99f3ddd401316c,c9afbdb0c304a610fc99f3ddd401316b"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 27/02/2025 20:07:28">55a2fae0c3046610fc99f3ddd4013108</action_status_metadata_id>
+        <condition>{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Parse step failure</label>
+        <order>2</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:03:06</sys_created_on>
+        <sys_id>05afbdb0c304a610fc99f3ddd401316c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:19</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 27/02/2025 20:07:28">55a2fae0c3046610fc99f3ddd4013108</action_status_metadata_id>
+        <condition>{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].error_code}}=1</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Integration failure</label>
+        <order>1</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:03:06</sys_created_on>
+        <sys_id>c9afbdb0c304a610fc99f3ddd401316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:03:06</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN15a2bae0c3046610fc99f3ddd40131e3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>location</element>
+        <help/>
+        <hint/>
+        <label>location</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>15a2bae0c3046610fc99f3ddd40131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT IN040ebd30c304a610fc99f3ddd4013197,1da2fae0c3046610fc99f3ddd4013101,59a2bae0c3046610fc99f3ddd40131ee"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>variable</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:55:56</sys_created_on>
+        <sys_id>040ebd30c304a610fc99f3ddd4013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:55:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>1da2fae0c3046610fc99f3ddd4013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-27 23:07:28</sys_created_on>
+        <sys_id>59a2bae0c3046610fc99f3ddd40131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-27 23:07:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_cbe1fa2cc3c06610fc99f3ddd40131cb"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=cbe1fa2cc3c06610fc99f3ddd40131cb^sys_idNOT INc60bb17cc3c0a610fc99f3ddd40131ac"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c60bb17cc3c0a610fc99f3ddd40131ac","name":"plan","plan_signature":null}}</plan>
+        <snapshot>82118e34c304a610fc99f3ddd401313a</snapshot>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c60bb17cc3c0a610fc99f3ddd40131ac</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:29</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>integration_yahoo_weather_api</internal_name>
+        <label_cache>[{"name":"{{action.location}}","label":"action➛location","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.format}}","label":"action➛format","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.u}}","label":"action➛u","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].endpoint}}","label":"step➛Varibles Inicialization➛endpoint","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1bc2a12b-b5ed-468d-9881-857878057ac2"}},{"name":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].apikey}}","label":"step➛Varibles Inicialization➛apikey","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"1860371d-6f84-45f6-b410-0df0edfd6ca7"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].response_body}}","label":"step➛Weather Integration➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].root}}","label":"step➛Parser ResponseBody➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Object","co_type_name":"FDd37ab53c4ec0a610a7957f2a0de0bb0e","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","uiUniqueId":"761c946e-4efa-4a66-bd9a-59f660feace0"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].error_code}}","label":"step➛Weather Integration➛Error Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].__step_status__.code}}","label":"step➛Weather Integration➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].__step_status__.code}}","label":"step➛Parser ResponseBody➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Integration Yahoo Weather API</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Integration Yahoo Weather API">cbe1fa2cc3c06610fc99f3ddd40131cb</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e90bb17cc3c0a610fc99f3ddd4013105</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:26</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e90bb17cc3c0a610fc99f3ddd4013105</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>710bb17cc3c0a610fc99f3ddd4013169</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">b10bb17cc3c0a610fc99f3ddd401315b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>e90bb17cc3c0a610fc99f3ddd4013105</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>bd0bb17cc3c0a610fc99f3ddd4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">390bb17cc3c0a610fc99f3ddd401315f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>e90bb17cc3c0a610fc99f3ddd4013105</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:03:34</sys_created_on>
+        <sys_id>b3bf71f0c304a610fc99f3ddd40131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:03:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</table>
+        <value>{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>e90bb17cc3c0a610fc99f3ddd4013105</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>3d0bb17cc3c0a610fc99f3ddd4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>e90bb17cc3c0a610fc99f3ddd4013105</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>790bb17cc3c0a610fc99f3ddd4013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT IN350bb17cc3c0a610fc99f3ddd4013125,e10bb17cc3c0a610fc99f3ddd4013112,f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</action>
+        <cid>3d978acf-0de4-4103-9e5a-5d85caf00d28</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Weather Integration</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>350bb17cc3c0a610fc99f3ddd4013125</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:27</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>310bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>3d0bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>750bb17cc3c0a610fc99f3ddd4013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>790bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b10bb17cc3c0a610fc99f3ddd4013149</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b50bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f10bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>350bb17cc3c0a610fc99f3ddd4013125</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>fd0bb17cc3c0a610fc99f3ddd4013148</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>390bb17cc3c0a610fc99f3ddd4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>750bb17cc3c0a610fc99f3ddd4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].endpoint}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b10bb17cc3c0a610fc99f3ddd4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>3d0bb17cc3c0a610fc99f3ddd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>bd0bb17cc3c0a610fc99f3ddd4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>fd0bb17cc3c0a610fc99f3ddd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"x-rapidapi-host","value":"yahoo-weather5.p.rapidapi.com","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"x-rapidapi-key","value":"{{step[3ce6bfd0-15f4-4a03-9df4-25f15babd36d].apikey}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b50bb17cc3c0a610fc99f3ddd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>790bb17cc3c0a610fc99f3ddd4013146</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>350bb17cc3c0a610fc99f3ddd4013125</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f90bb17cc3c0a610fc99f3ddd4013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"location","value":"{{action.location}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"u","value":"c","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_350bb17cc3c0a610fc99f3ddd4013125"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</action>
+        <cid>3ce6bfd0-15f4-4a03-9df4-25f15babd36d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Varibles Inicialization</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>e10bb17cc3c0a610fc99f3ddd4013112</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e10bb17cc3c0a610fc99f3ddd4013112</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>3d0bb17cc3c0a610fc99f3ddd4013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>e10bb17cc3c0a610fc99f3ddd4013112</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>fd0bb17cc3c0a610fc99f3ddd4013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    outputs.apikey = gs.getProperty("x_1546361_bases.integration_apikey", 0);&#13;
+    outputs.endpoint = gs.getProperty("x_1546361_bases.integration_endpoint", "");&#13;
+&#13;
+})(inputs, outputs);&#13;
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112^id=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=e10bb17cc3c0a610fc99f3ddd4013112^sys_idNOT IN650bb17cc3c0a610fc99f3ddd401311a,a90bb17cc3c0a610fc99f3ddd4013116"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1bc2a12b-b5ed-468d-9881-857878057ac2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>endpoint</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>endpoint</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Varibles Inicialization">e10bb17cc3c0a610fc99f3ddd4013112</model>
+        <model_id>e10bb17cc3c0a610fc99f3ddd4013112</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>650bb17cc3c0a610fc99f3ddd401311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1860371d-6f84-45f6-b410-0df0edfd6ca7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>apikey</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>apikey</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Varibles Inicialization">e10bb17cc3c0a610fc99f3ddd4013112</model>
+        <model_id>e10bb17cc3c0a610fc99f3ddd4013112</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>a90bb17cc3c0a610fc99f3ddd4013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e10bb17cc3c0a610fc99f3ddd4013112"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112^sys_idNOT IN290bb17cc3c0a610fc99f3ddd4013119,a90bb17cc3c0a610fc99f3ddd401311c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>apikey</element>
+        <help/>
+        <hint/>
+        <label>apikey</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>290bb17cc3c0a610fc99f3ddd4013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>endpoint</element>
+        <help/>
+        <hint/>
+        <label>endpoint</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_e10bb17cc3c0a610fc99f3ddd4013112</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>a90bb17cc3c0a610fc99f3ddd401311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</action>
+        <cid>9c910656-15e7-41c0-b44e-a3ffaf092e99</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>Parser ResponseBody</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f90bb17cc3c0a610fc99f3ddd401314c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f90bb17cc3c0a610fc99f3ddd401314c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>310bb17cc3c0a610fc99f3ddd4013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>{
+    "location": {
+        "city": "Curitiba",
+        "woeid": 455822,
+        "country": "Brazil",
+        "lat": -25.45682,
+        "long": -49.284859,
+        "timezone_id": "America/Sao_Paulo"
+    },
+    "current_observation": {
+        "pubDate": 1740749932,
+        "wind": {
+            "chill": 28,
+            "direction": "NE",
+            "speed": 5
+        },
+        "atmosphere": {
+            "humidity": 71,
+            "visibility": 10,
+            "pressure": 1019
+        },
+        "astronomy": {
+            "sunrise": "6:10 AM",
+            "sunset": "6:48 PM"
+        },
+        "condition": {
+            "temperature": 25,
+            "text": "Cloudy",
+            "code": 26
+        }
+    },
+    "forecasts": [
+        {
+            "day": "Fri",
+            "date": 1740758400,
+            "high": 30,
+            "low": 18,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sat",
+            "date": 1740844800,
+            "high": 32,
+            "low": 18,
+            "text": "Scattered Showers",
+            "code": 45
+        },
+        {
+            "day": "Sun",
+            "date": 1740931200,
+            "high": 33,
+            "low": 18,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Mon",
+            "date": 1741017600,
+            "high": 31,
+            "low": 18,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Tue",
+            "date": 1741104000,
+            "high": 30,
+            "low": 17,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Wed",
+            "date": 1741190400,
+            "high": 31,
+            "low": 17,
+            "text": "Mostly Sunny",
+            "code": 34
+        },
+        {
+            "day": "Thu",
+            "date": 1741276800,
+            "high": 30,
+            "low": 18,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Fri",
+            "date": 1741363200,
+            "high": 30,
+            "low": 17,
+            "text": "Partly Cloudy",
+            "code": 30
+        },
+        {
+            "day": "Sat",
+            "date": 1741449600,
+            "high": 31,
+            "low": 17,
+            "text": "Mostly Cloudy",
+            "code": 28
+        },
+        {
+            "day": "Sun",
+            "date": 1741536000,
+            "high": 30,
+            "low": 17,
+            "text": "Mostly Cloudy",
+            "code": 28
+        },
+        {
+            "day": "Mon",
+            "date": 1741622400,
+            "high": 30,
+            "low": 18,
+            "text": "Showers",
+            "code": 11
+        }
+    ]
+}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f90bb17cc3c0a610fc99f3ddd401314c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>7d0bb17cc3c0a610fc99f3ddd4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"location","children":[{"name":"city","children":[],"type":"string","jpath":"$.location.city","previewValue":"Curitiba"},{"name":"woeid","children":[],"type":"string","jpath":"$.location.woeid","previewValue":"455822"},{"name":"country","children":[],"type":"string","jpath":"$.location.country","previewValue":"Brazil"},{"name":"lat","children":[],"type":"string","jpath":"$.location.lat","previewValue":"-25.45682"},{"name":"long","children":[],"type":"string","jpath":"$.location.long","previewValue":"-49.284859"},{"name":"timezone_id","children":[],"type":"string","jpath":"$.location.timezone_id","previewValue":"America/Sao_Paulo"}],"type":"object","jpath":"$.location","previewValue":""},{"name":"current_observation","children":[{"name":"pubDate","children":[],"type":"string","jpath":"$.current_observation.pubDate","previewValue":"1740749932"},{"name":"wind","children":[{"name":"chill","children":[],"type":"string","jpath":"$.current_observation.wind.chill","previewValue":"28"},{"name":"direction","children":[],"type":"string","jpath":"$.current_observation.wind.direction","previewValue":"NE"},{"name":"speed","children":[],"type":"string","jpath":"$.current_observation.wind.speed","previewValue":"5"}],"type":"object","jpath":"$.current_observation.wind","previewValue":""},{"name":"atmosphere","children":[{"name":"humidity","children":[],"type":"string","jpath":"$.current_observation.atmosphere.humidity","previewValue":"71"},{"name":"visibility","children":[],"type":"string","jpath":"$.current_observation.atmosphere.visibility","previewValue":"10"},{"name":"pressure","children":[],"type":"string","jpath":"$.current_observation.atmosphere.pressure","previewValue":"1019"}],"type":"object","jpath":"$.current_observation.atmosphere","previewValue":""},{"name":"astronomy","children":[{"name":"sunrise","children":[],"type":"string","jpath":"$.current_observation.astronomy.sunrise","previewValue":"6:10 AM"},{"name":"sunset","children":[],"type":"string","jpath":"$.current_observation.astronomy.sunset","previewValue":"6:48 PM"}],"type":"object","jpath":"$.current_observation.astronomy","previewValue":""},{"name":"condition","children":[{"name":"temperature","children":[],"type":"string","jpath":"$.current_observation.condition.temperature","previewValue":"25"},{"name":"text","children":[],"type":"string","jpath":"$.current_observation.condition.text","previewValue":"Cloudy"},{"name":"code","children":[],"type":"string","jpath":"$.current_observation.condition.code","previewValue":"26"}],"type":"object","jpath":"$.current_observation.condition","previewValue":""}],"type":"object","jpath":"$.current_observation","previewValue":""},{"name":"forecasts","children":[{"name":"forecasts_object","children":[{"name":"day","children":[],"type":"string","jpath":"$.forecasts[*].day","previewValue":"Fri"},{"name":"date","children":[],"type":"string","jpath":"$.forecasts[*].date","previewValue":"1740758400"},{"name":"high","children":[],"type":"string","jpath":"$.forecasts[*].high","previewValue":"30"},{"name":"low","children":[],"type":"string","jpath":"$.forecasts[*].low","previewValue":"18"},{"name":"text","children":[],"type":"string","jpath":"$.forecasts[*].text","previewValue":"Partly Cloudy"},{"name":"code","children":[],"type":"string","jpath":"$.forecasts[*].code","previewValue":"30"}],"type":"object","jpath":"$.forecasts[*]","previewValue":""}],"type":"array.object","jpath":"$.forecasts[*]","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f90bb17cc3c0a610fc99f3ddd401314c^id=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_element_mapping action="delete_multiple" query="id=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f90bb17cc3c0a610fc99f3ddd401314c</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f90bb17cc3c0a610fc99f3ddd4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f90bb17cc3c0a610fc99f3ddd401314c</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>390bb17cc3c0a610fc99f3ddd4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f90bb17cc3c0a610fc99f3ddd401314c</id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>750bb17cc3c0a610fc99f3ddd4013158</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f90bb17cc3c0a610fc99f3ddd401314c^sys_idNOT IN390bb17cc3c0a610fc99f3ddd4013150"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDb90bb17ca2c0a610cbb65f4442bd434f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>663fdb73c3bf5210fc99f3ddd4013169</scope_name>
+        <serialized_content>{"FlowDesigner:FDb90bb17ca2c0a610cbb65f4442bd434f":{"location":{"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1f6eca58-bb74-4179-b11a-08c71a3bd045\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3fc63ad1-2205-49ec-8d1a-92936e14bc05\"}"},"timezone_id":"String","timezone_id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timezone_id\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"fbdfe9df-afdd-4eef-9e06-463a30304790\"}"},"woeid":"String","woeid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"woeid\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"dacea28e-2508-4a7b-aa32-cf982fdbf421\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"0246e33c-073a-4171-8cb8-c951e3552924\"}"},"long":"String","long.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"long\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"1596e1c2-dce8-4172-98e4-1f7ffbc32526\"}"}},"location.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"location\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"cfa3713f-bc78-445c-80cf-8da42609796c\"}"},"current_observation":{"atmosphere":{"visibility":"String","visibility.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"visibility\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b0300182-e04d-42d1-a607-c1beb0437e97\"}"},"humidity":"String","humidity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"humidity\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"f8416f99-f73b-4acb-9685-d1db6070e05e\"}"},"pressure":"String","pressure.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pressure\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"0ca5ce01-2bb6-4a1f-9dcd-cb007f9dd806\"}"}},"atmosphere.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"atmosphere\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"855b20a7-8302-4563-a693-e6f048d7d8d6\"}"},"condition":{"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"59c6be91-0937-4bee-9db4-be05a1e8adf7\"}"},"temperature":"String","temperature.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"temperature\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"97d17ac8-19f8-4dcb-b69c-fa5623c71045\"}"},"text":"String","text.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"text\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"94a116da-6174-4935-aef5-0d85f44f1687\"}"}},"condition.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"condition\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"9973ccc5-d67f-46c3-b80c-b172af143cb1\"}"},"astronomy":{"sunrise":"String","sunrise.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sunrise\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"621d4651-8a15-4cb1-82ea-c69aabefd2ba\"}"},"sunset":"String","sunset.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"sunset\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8faabad6-0e8b-46f4-9490-2ea661e946ce\"}"}},"astronomy.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"astronomy\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"48dfbca4-4f48-4e97-98b6-114ee90454f1\"}"},"pubDate":"String","pubDate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pubDate\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"1b246b4f-6c59-4db9-b876-630bb4722a20\"}"},"wind":{"chill":"String","chill.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"chill\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"a4f35e45-40cd-4882-9355-c681325d5039\"}"},"speed":"String","speed.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"speed\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"17a5ef32-5733-47c1-af5a-df627f02be37\"}"},"direction":"String","direction.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"direction\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"820c2426-a702-4b31-8d6b-9c56249b4e4a\"}"}},"wind.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"wind\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"5316e1ff-7a01-4788-8a54-8e97f859e57c\"}"}},"current_observation.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"current_observation\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"fbe93ef7-f545-4571-84b5-f10617ad4bee\"}"},"forecasts":[{"$5_forecasts":{"date":"String","date.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"date\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"99012158-a09f-4c35-8f82-ac5edf6ec09e\"}"},"high":"String","high.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"high\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"6fcb533a-7110-45fb-8649-b5422e2a93b4\"}"},"code":"String","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"64a44b07-7baf-4749-9609-53b0006360e8\"}"},"low":"String","low.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"low\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"d845bef1-8d08-49e4-afe2-40f8c05124be\"}"},"text":"String","text.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"text\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"d248cece-e32b-4ff9-b639-1627866bd169\"}"},"day":"String","day.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"day\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"3a1fb6e2-46ff-41f5-a486-aba66abcdffa\"}"}}}],"forecasts.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"forecasts\",\"mandatory\":\"false\",\"child_name\":\"forecasts_object\",\"uiUniqueId\":\"82d230e2-7f46-49cf-9fb4-73114516e96d\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"forecasts_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"3a261d3c-bce5-46ad-9f73-7c965fcc4ce1\"}"}},"FlowDesigner:FDb90bb17ca2c0a610cbb65f4442bd434f.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"761c946e-4efa-4a66-bd9a-59f660feace0\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb90bb17ca2c0a610cbb65f4442bd434f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7d0bb17cc3c0a610fc99f3ddd401314f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:27</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDb90bb17ca2c0a610cbb65f4442bd434f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=761c946e-4efa-4a66-bd9a-59f660feace0</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Parser ResponseBody">f90bb17cc3c0a610fc99f3ddd401314c</model>
+        <model_id>f90bb17cc3c0a610fc99f3ddd401314c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f90bb17cc3c0a610fc99f3ddd401314c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>390bb17cc3c0a610fc99f3ddd4013150</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f90bb17cc3c0a610fc99f3ddd401314c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f90bb17cc3c0a610fc99f3ddd401314c^sys_idNOT INf50bb17cc3c0a610fc99f3ddd4013153"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f90bb17cc3c0a610fc99f3ddd401314c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f50bb17cc3c0a610fc99f3ddd4013153</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT INe50bb17cc3c0a610fc99f3ddd4013108"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=56957de9-9f92-48ab-a27e-1b3a15340d44</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>location</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>location</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</model>
+        <model_id>e90bb17cc3c0a610fc99f3ddd4013105</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>e50bb17cc3c0a610fc99f3ddd4013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e50bb17cc3c0a610fc99f3ddd4013108"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT IN33bf71f0c304a610fc99f3ddd40131ba,390bb17cc3c0a610fc99f3ddd401315f,b10bb17cc3c0a610fc99f3ddd401315b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=00b68557-f40c-4baf-81a0-cf50550e04bf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>variable</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</model>
+        <model_id>e90bb17cc3c0a610fc99f3ddd4013105</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:03:34</sys_created_on>
+        <sys_id>33bf71f0c304a610fc99f3ddd40131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:03:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=33bf71f0c304a610fc99f3ddd40131ba"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33bf71f0c304a610fc99f3ddd40131ba"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b0d594c8-c6db-456c-a564-6fe1a251f162,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</model>
+        <model_id>e90bb17cc3c0a610fc99f3ddd4013105</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>390bb17cc3c0a610fc99f3ddd401315f</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=390bb17cc3c0a610fc99f3ddd401315f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=390bb17cc3c0a610fc99f3ddd401315f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=3b70cc9e-0365-4604-a277-779068baebb6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</model>
+        <model_id>e90bb17cc3c0a610fc99f3ddd4013105</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b10bb17cc3c0a610fc99f3ddd401315b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:03:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b10bb17cc3c0a610fc99f3ddd401315b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b10bb17cc3c0a610fc99f3ddd401315b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT INb50bb17cc3c0a610fc99f3ddd401316a"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Integration Yahoo Weather API">e90bb17cc3c0a610fc99f3ddd4013105</action_type_id>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>b50bb17cc3c0a610fc99f3ddd401316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=b50bb17cc3c0a610fc99f3ddd401316a^sys_idNOT IN0a118e34c304a610fc99f3ddd4013139,86118e34c304a610fc99f3ddd4013139"/>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 28/02/2025 10:42:57">b50bb17cc3c0a610fc99f3ddd401316a</action_status_metadata_id>
+        <condition>{{step[9c910656-15e7-41c0-b44e-a3ffaf092e99].__step_status__.code}}=1</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Parse step failure</label>
+        <order>2</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:09:27</sys_created_on>
+        <sys_id>0a118e34c304a610fc99f3ddd4013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:27</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_hub_status_condition action="INSERT_OR_UPDATE">
+        <action_status_metadata_id display_value="Created 28/02/2025 10:42:57">b50bb17cc3c0a610fc99f3ddd401316a</action_status_metadata_id>
+        <condition>{{step[3d978acf-0de4-4103-9e5a-5d85caf00d28].error_code}}=1</condition>
+        <dont_treat_as_error>true</dont_treat_as_error>
+        <label>Integration failure</label>
+        <order>1</order>
+        <status>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":"500"}},"message":{"$cv":{"$c":"java.lang.String","$v":"Integration error"}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</status>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:09:27</sys_created_on>
+        <sys_id>86118e34c304a610fc99f3ddd4013139</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:09:27</sys_updated_on>
+    </sys_hub_status_condition>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT IN210bb17cc3c0a610fc99f3ddd401310c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>location</element>
+        <help/>
+        <hint/>
+        <label>location</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:56</sys_created_on>
+        <sys_id>210bb17cc3c0a610fc99f3ddd401310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105^sys_idNOT IN350bb17cc3c0a610fc99f3ddd4013164,f7bf71f0c304a610fc99f3ddd40131bd,f90bb17cc3c0a610fc99f3ddd401315e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>350bb17cc3c0a610fc99f3ddd4013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>variable</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 14:03:34</sys_created_on>
+        <sys_id>f7bf71f0c304a610fc99f3ddd40131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 14:03:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ludmila</sys_created_by>
+        <sys_created_on>2025-02-28 13:42:57</sys_created_on>
+        <sys_id>f90bb17cc3c0a610fc99f3ddd401315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ludmila</sys_updated_by>
+        <sys_updated_on>2025-02-28 13:42:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e90bb17cc3c0a610fc99f3ddd4013105"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>cbe1fa2cc3c06610fc99f3ddd40131cb</sys_id>
+        <latest_snapshot>e90bb17cc3c0a610fc99f3ddd4013105</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
