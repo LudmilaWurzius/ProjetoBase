@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1546361_bases.FilterAvailableManagers</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FilterAvailableManagers</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FilterAvailableManagers = Class.create();
+FilterAvailableManagers.prototype = {
+    initialize: function() {},
+
+    getAvailableManagers: function() {
+        var availableManagers = [];
+        var managersInBases = new Set(); // Armazena os sys_ids de gerentes já cadastrados
+
+        // Buscar todos os usuários que já são gerentes de alguma base
+        var baseGR = new GlideRecord('x_1546361_bases_bases');
+        baseGR.addNotNullQuery('assigned_to'); // Apenas registros onde há um gerente atribuído
+        baseGR.query();
+
+        while (baseGR.next()) {
+            managersInBases.add(baseGR.assigned_to.toString()); // Adiciona os IDs ao Set
+        }
+
+        // Buscar usuários do sys_user que NÃO estão na lista de gerentes já cadastrados
+        var userGR = new GlideRecord('sys_user');
+        userGR.query();
+
+        while (userGR.next()) {
+            var userId = userGR.sys_id.toString();
+            if (!managersInBases.has(userId)) { // Se o ID do usuário NÃO estiver na lista de gerentes, adiciona
+                availableManagers.push(userId);
+            }
+        }
+
+        return availableManagers.join(',');
+    },
+
+    type: 'FilterAvailableManagers'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:03:11</sys_created_on>
+        <sys_id>eb7c0539c3406210fc99f3ddd40131de</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>FilterAvailableManagers</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_script_include_eb7c0539c3406210fc99f3ddd40131de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:29:48</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>eb7c0539c3406210fc99f3ddd40131de</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 13:03:11</sys_created_on>
+        <sys_id>24be8db9c3406210fc99f3ddd401318b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 13:03:11</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

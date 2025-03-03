@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1546361_bases.FilterAvailableBases</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>FilterAvailableBases</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var FilterAvailableBases = Class.create();
+FilterAvailableBases.prototype = {
+    initialize: function() {},
+
+    getAvailableBases: function() {
+        var userID = gs.getUserID();  // Obtém o ID do usuário logado
+        var availableBases = [];
+
+        // ]]>🔍<![CDATA[ 1️⃣ Verifica se o usuário já tem um registro de inscrição ativo (exceto rejeitados)
+        var userEnrollment = new GlideRecord('x_1546361_bases_access_registration');
+        userEnrollment.addQuery('requester_name', userID); // Usa o campo correto de referência ao usuário
+        userEnrollment.addQuery('state', '!=', 7); // Confirme se "7" representa "Rejeitado"
+        userEnrollment.query();
+
+        var blockedBases = [];
+        while (userEnrollment.next()) {
+            blockedBases.push(userEnrollment.base.toString()); // Coleta as bases onde o usuário já está inscrito
+        }
+
+        // ]]>🔍<![CDATA[ 2️⃣ Busca bases com vagas disponíveis
+        var baseRecord = new GlideRecord('x_1546361_bases_bases');
+        baseRecord.addQuery('maximum_capacity', '>', 0); // Somente bases com espaço disponível
+        baseRecord.query();
+
+        while (baseRecord.next()) {
+            if (blockedBases.indexOf(baseRecord.sys_id.toString()) === -1) { 
+                availableBases.push(baseRecord.sys_id.toString()); // Só adiciona se o usuário não estiver registrado
+            }
+        }
+
+        if (availableBases.length > 0) {
+            return 'sys_idIN' + availableBases.join(',');
+        }
+
+        return 'sys_idINNONE'; // Caso nenhuma base esteja disponível
+    },
+
+    type: 'FilterAvailableBases'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 18:10:19</sys_created_on>
+        <sys_id>328b21ecc38c2610fc99f3ddd4013173</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FilterAvailableBases</sys_name>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_script_include_328b21ecc38c2610fc99f3ddd4013173</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 18:41:59</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>328b21ecc38c2610fc99f3ddd4013173</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-27 18:10:19</sys_created_on>
+        <sys_id>68ae25a0c3cc2610fc99f3ddd4013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-27 18:10:19</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
