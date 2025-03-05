@@ -14,22 +14,27 @@
 if (gs.hasRole('x_1546361_bases.admin - bases')) {
     answer = true;
 } else {
-    // Verifica se o registro de Access Registration tem uma base associada
-    if (!current.base.nil()) {
-        var baseGR = new GlideRecord('x_1546361_bases_bases'); // Consulta a tabela Bases
-        
-        // Busca a base associada ao registro de Access Registration
-        baseGR.addQuery('sys_id', current.base); 
-        baseGR.query();
-        
-        if (baseGR.next()) { 
-            // Verifica se o usuário logado é o assigned_to (manager) da base associada ao registro
-            answer = (baseGR.assigned_to == gs.getUserID());
-        } else {
-            answer = false; // Se a base não for encontrada, bloqueia o acesso
-        }
+    // Se o usuário for o criador do registro, concede acesso
+    if (current.opened_by == gs.getUserID()) {
+        answer = true;
     } else {
-        answer = false; // Se o registro de Access Registration não tiver uma base associada, bloqueia
+        // Verifica se o registro de Access Registration tem uma base associada
+        if (!current.base.nil()) {
+            var baseGR = new GlideRecord('x_1546361_bases_bases'); // Consulta a tabela Bases
+
+            // Busca a base associada ao registro de Access Registration
+            baseGR.addQuery('sys_id', current.base);
+            baseGR.query();
+
+            if (baseGR.next()) {
+                // Verifica se o usuário logado é o assigned_to (manager) da base associada ao registro
+                answer = (baseGR.assigned_to == gs.getUserID());
+            } else {
+                answer = false; // Se a base não for encontrada, bloqueia o acesso
+            }
+        } else {
+            answer = false; // Se o registro de Access Registration não tiver uma base associada, bloqueia
+        }
     }
 }
 ]]></script>
@@ -38,14 +43,14 @@ if (gs.hasRole('x_1546361_bases.admin - bases')) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-03 01:36:24</sys_created_on>
         <sys_id>63b0f669c3442210fc99f3ddd4013161</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>x_1546361_bases_access_registration</sys_name>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name>sys_security_acl_63b0f669c3442210fc99f3ddd4013161</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 03:53:25</sys_updated_on>
+        <sys_updated_on>2025-03-03 23:58:21</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
     <sys_es_latest_script action="INSERT_OR_UPDATE">

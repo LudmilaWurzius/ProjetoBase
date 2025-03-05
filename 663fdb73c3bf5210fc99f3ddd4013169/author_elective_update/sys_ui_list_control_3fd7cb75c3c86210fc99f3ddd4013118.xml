@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control">
+    <sys_ui_list_control action="DELETE">
+        <columns_condition/>
+        <disable_nlq>false</disable_nlq>
+        <edit_condition/>
+        <edit_default_filter/>
+        <edit_roles/>
+        <empty_condition/>
+        <filter_condition/>
+        <filter_roles/>
+        <hierarchical_lists>false</hierarchical_lists>
+        <label>BASES: Button new</label>
+        <link_condition/>
+        <link_roles/>
+        <list_edit_insert_row>false</list_edit_insert_row>
+        <list_edit_ref_qual_tag/>
+        <list_edit_type/>
+        <name/>
+        <new_condition/>
+        <new_roles/>
+        <omit_columns_if_empty>false</omit_columns_if_empty>
+        <omit_count>false</omit_count>
+        <omit_count_views>false</omit_count_views>
+        <omit_count_views_list/>
+        <omit_drilldown_link>false</omit_drilldown_link>
+        <omit_edit_button>true</omit_edit_button>
+        <omit_filters>false</omit_filters>
+        <omit_if_empty>false</omit_if_empty>
+        <omit_links>false</omit_links>
+        <omit_new_button>false</omit_new_button>
+        <related_list/>
+        <sys_class_name>sys_ui_list_control</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 21:53:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fd7cb75c3c86210fc99f3ddd4013118</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_update_name>sys_ui_list_control_3fd7cb75c3c86210fc99f3ddd4013118</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 21:53:35</sys_updated_on>
+    </sys_ui_list_control>
+    <sys_es_latest_script action="DELETE">
+        <id>3fd7cb75c3c86210fc99f3ddd4013118</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 21:53:33</sys_created_on>
+        <sys_id>2518cf75c3c86210fc99f3ddd4013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 21:53:33</sys_updated_on>
+        <table>sys_ui_list_control</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</application>
+        <file_path/>
+        <instance_id>64d4f8551b06b11cc84543f4bd4bcb25</instance_id>
+        <instance_name>dev192592</instance_name>
+        <name>sys_ui_list_control_3fd7cb75c3c86210fc99f3ddd4013118</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_list_control"><sys_ui_list_control action="INSERT_OR_UPDATE"><columns_condition/><disable_nlq>false</disable_nlq><edit_condition/><edit_default_filter/><edit_roles/><empty_condition/><filter_condition/><filter_roles/><hierarchical_lists>false</hierarchical_lists><label>BASES: Button new</label><link_condition/><link_roles/><list_edit_insert_row>false</list_edit_insert_row><list_edit_ref_qual_tag/><list_edit_type/><name/><new_condition/><new_roles/><omit_columns_if_empty>false</omit_columns_if_empty><omit_count>false</omit_count><omit_count_views>false</omit_count_views><omit_count_views_list/><omit_drilldown_link>false</omit_drilldown_link><omit_edit_button>true</omit_edit_button><omit_filters>false</omit_filters><omit_if_empty>false</omit_if_empty><omit_links>false</omit_links><omit_new_button>false</omit_new_button><related_list/><sys_class_name>sys_ui_list_control</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 21:53:35</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3fd7cb75c3c86210fc99f3ddd4013118</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides display_value="">global</sys_overrides><sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package><sys_policy/><sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope><sys_update_name>sys_ui_list_control_3fd7cb75c3c86210fc99f3ddd4013118</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 21:53:35</sys_updated_on></sys_ui_list_control><sys_es_latest_script action="INSERT_OR_UPDATE"><id>3fd7cb75c3c86210fc99f3ddd4013118</id><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-03 21:53:33</sys_created_on><sys_id>2518cf75c3c86210fc99f3ddd4013151</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-03 21:53:33</sys_updated_on><table>sys_ui_list_control</table><use_es_latest>true</use_es_latest></sys_es_latest_script></record_update>]]></payload>
+        <payload_hash>206528371</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>bca0fc90c3c4e210fc99f3ddd401314f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 21:53:35</sys_created_on>
+        <sys_id>8618cf75c3c86210fc99f3ddd4013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1955e0007ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 21:53:35</sys_updated_on>
+        <type>List Control</type>
+        <update_guid>8a18cf7572c862100d794b85763fe48f</update_guid>
+        <update_guid_history>8a18cf7572c862100d794b85763fe48f:206528371</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 21:54:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list_control">sys_ui_list_control</sys_db_object>
+        <sys_id>dc6ab5be29084c609bfbcec086919d04</sys_id>
+        <sys_metadata>3fd7cb75c3c86210fc99f3ddd4013118</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
+        <sys_scope_delete display_value="">30db4dd8764f4494b28565ecf204f329</sys_scope_delete>
+        <sys_update_name>sys_ui_list_control_3fd7cb75c3c86210fc99f3ddd4013118</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_control_3fd7cb75c3c86210fc99f3ddd4013118">8618cf75c3c86210fc99f3ddd4013190</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 21:54:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -6,22 +6,22 @@
         <applies_to/>
         <condition/>
         <decision_type>allow</decision_type>
-        <description/>
+        <description>Allow list_edit for records in x_1546361_bases_bases, for users with role x_1546361_bases.admin - bases.</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1546361_bases_bases</name>
-        <operation display_value="create">create</operation>
+        <operation display_value="list_edit">54f535270a0a0b8c007c67009ab2bdc0</operation>
         <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
-        <sys_created_by>Ludmila</sys_created_by>
-        <sys_created_on>2025-02-28 02:39:31</sys_created_on>
-        <sys_id>eb23ef60c3086610fc99f3ddd40131e8</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-03 21:55:31</sys_created_on>
+        <sys_id>ea4807b5c3c86210fc99f3ddd4013168</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_1546361_bases_bases</sys_name>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
-        <sys_update_name>sys_security_acl_eb23ef60c3086610fc99f3ddd40131e8</sys_update_name>
+        <sys_update_name>sys_security_acl_ea4807b5c3c86210fc99f3ddd4013168</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-03 23:58:20</sys_updated_on>
         <type display_value="record">record</type>

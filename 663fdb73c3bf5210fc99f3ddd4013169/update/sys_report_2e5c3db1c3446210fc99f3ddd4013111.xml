@@ -48,8 +48,9 @@
         <exp_report_attrs>true</exp_report_attrs>
         <field>base</field>
         <field_list>number,requester_name,function,base,state</field_list>
-        <filter table="x_1546361_bases_access_registration">state=3^base.maximum_capacity=0<item display_value="Approved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <filter table="x_1546361_bases_access_registration">state=3^base.maximum_capacity=0^base.assigned_toDYNAMIC90d1921e5f510100a9ad2572f2b477fe<item display_value="Approved" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="false" field="base.maximum_capacity" goto="false" newquery="false" operator="=" or="false" value="0"/>
+            <item endquery="false" field="base.assigned_to" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
         </filter>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -110,14 +111,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-03 16:22:39</sys_created_on>
         <sys_id>2e5c3db1c3446210fc99f3ddd4013111</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>BASES: registration</sys_name>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name>sys_report_2e5c3db1c3446210fc99f3ddd4013111</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-03 16:28:42</sys_updated_on>
+        <sys_updated_on>2025-03-03 17:57:33</sys_updated_on>
         <table>x_1546361_bases_access_registration</table>
         <title>BASES: registration</title>
         <title_horizontal_alignment>center</title_horizontal_alignment>

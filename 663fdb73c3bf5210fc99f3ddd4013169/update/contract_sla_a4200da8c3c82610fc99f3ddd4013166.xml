@@ -17,11 +17,11 @@
         <resume_condition/>
         <retroactive>false</retroactive>
         <retroactive_pause>true</retroactive_pause>
-        <schedule display_value="8-5 weekdays excluding holidays">090eecae0a0a0b260077e1dfa71da828</schedule>
+        <schedule display_value="8-5 weekdays">08fcd0830a0a0b2600079f56b1adb9ae</schedule>
         <schedule_source>sla_definition</schedule_source>
         <schedule_source_field/>
         <set_start_to/>
-        <start_condition table="x_1546361_bases_access_registration">state=2^EQ<item display_value="Awaiting Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
+        <start_condition table="x_1546361_bases_access_registration">state=1^EQ<item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </start_condition>
         <stop_condition table="x_1546361_bases_access_registration">stateIN3,7^EQ<item display_value="3,7" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="3,7"/>
@@ -33,15 +33,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a4200da8c3c82610fc99f3ddd4013166</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Registration Approved</sys_name>
         <sys_overrides/>
         <sys_package display_value="Bases" source="x_1546361_bases">663fdb73c3bf5210fc99f3ddd4013169</sys_package>
         <sys_policy/>
         <sys_scope display_value="Bases">663fdb73c3bf5210fc99f3ddd4013169</sys_scope>
         <sys_update_name>contract_sla_a4200da8c3c82610fc99f3ddd4013166</sys_update_name>
-        <sys_updated_by>Ludmila</sys_updated_by>
-        <sys_updated_on>2025-02-27 14:50:17</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-03 21:41:17</sys_updated_on>
         <target>resolution</target>
         <timezone/>
         <timezone_source>task.caller_id.time_zone</timezone_source>
